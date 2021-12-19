@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p,
+    div {
+      margin: 0;
+      padding: 0;
+    }
+
+    #Sun_productMainDiv {
+      width: 80%;
+      margin: auto;
+    }
+    #Sun_productBtn1 {
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    #Sun_productBtn1 button {
+      height: 40px;
+      padding: 0px 70px;
+      border: none;
+      border-radius: 5px;
+    }
+    #Sun_productBtn2 {
+      display: flex;
+      color: #66509a;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    #Sun_productBtn2 div {
+      border: 1px solid #66509a;
+      padding: 5px;
+      margin-top: -5px;
+      border-radius: 10px;
+    }
+    #Sun_productBtn2 > div button {
+      background-color: white;
+      color: #66509a;
+      border: none;
+      padding: 0px 50px;
+      
+      
+    }
+    #productDisplyMain img {
+      width: 300px;
+    }
+    #productDisplyMain button{
+        width: 300px;
+        background-color: #5E93BD;
+        border: none;
+        height: 50px;
+        position: absolute;
+        border-radius: 0px 0px 20px 20px;
+        margin-top: 10px;
+
+    }
+    #productDisplyMain>div{
+        width: 300px;
+        height: 500px;
+        font-size: 19px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #productDisplyMain {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: space-between;
+    }
+    .mrpValue{
+        text-decoration-line: line-through;
+    }
+    #filterProduct{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        
+    }
+
+    #filterProduct p{
+        color: blueviolet;
+        font-size: 20px;
+    }
+    #filterProduct select{
+        padding: 8px;
+        margin-left: 40px;
+        border-radius: 10px;
+        width: 200px;
+        font-size: 17px;
+        color: blueviolet;
+       
+      
+    }
+    #contentDivId{
+        line-height: 32px;
+    }
+   
+
+  </style>
+
+  <body>
+    <div id="Sun_productMainDiv">
+      <div id="Sun_productBtn1">
+        <button
+          id="hairBtn"
+         
+          style="background-color: #efedf5; color: #66509a"
+        >
+          Hair
+        </button>
+        <button
+          id="skinBtn"
+        
+          style="background-color: #fbf3e9; color: #d8892b"
+        >
+          Skin
+        </button>
+        <button
+        id="weightBtn"
+         
+          style="background-color: #e8f0ef; color: #1a6c5e"
+        >
+          Weight
+        </button>
+
+        <button
+          id="pcosBtn"
+         
+          style="background-color: #fdeff0; color: #e86669"
+        >
+          PCOS
+        </button>
+
+        <button
+          id="feminineBtn"
+          
+          style="background-color: #eff4f8; color: #5e93bd"
+        >
+          Feminine Care
+        </button>
+       
+      </div>
+
+      <div id="filterProduct">
+          <p>Shop Weight Management Solutions</p>
+          <div>
+            <select name="" id="">
+                <option value="">Weight Type</option>
+              </select>
+              <select name="" id="">
+                <option value="">Weight Issue</option>
+              </select>
+          </div>
+         
+          
+          
+
+      </div>
+      <div id="Sun_productBtn2">
+        <p id="itemCount">6 &nbsp products</p>
+        <div>
+          <button id="allBtn">All</button>
+          <button id="kitesBtn" >Kits</button>
+          <button id="singleBtn" >Single</button>
+        </div>
+      </div>
+      <div id="productDisplyMain"></div>
+    </div>
+  </body>
+</html>
+<script type="module">
+
+  import productList from "./57 products_data.js";
+
+  console.log(productList);
+
+  let productDisplyMain = document.getElementById("productDisplyMain");
+  let productDisplyMainSubtype=[];
+  
+  let type;
+document.getElementById("hairBtn").addEventListener("click",hairFn)
+  function hairFn() {
+    buttonColor()
+    
+      let hairData=document.getElementById("hairBtn");
+      hairData.style.backgroundColor="#66509a"
+   
+      hairData.style.color="white"
+       type="hair"
+      appendData(type)
+    
+  }
+  
+document.getElementById("skinBtn").addEventListener("click",skinFn)
+  function skinFn(){
+    buttonColor()
+    let skinData=document.getElementById("skinBtn");
+    skinData.style.backgroundColor="#d8892b"
+   
+    skinData.style.color="white"
+    type="skin"
+      appendData(type)
+}
+
+document.getElementById("weightBtn").addEventListener("click",weightFn)
+
+function weightFn(){
+    // let weightFilter=document.getElementById("Sun_productBtn2");
+    // weightFilter.style.color="black"
+    buttonColor()
+   
+    // weightFilter.style.backgroundColor=""
+     let weightData=document.getElementById("weightBtn");
+     weightData.style.backgroundColor="#1a6c5e"
+   
+     weightData.style.color="white"
+
+    type="weight"
+      appendData(type)
+}
+
+document.getElementById("pcosBtn").addEventListener("click",pcosFn)
+function pcosFn(){
+    buttonColor()
+    let pcosData=document.getElementById("pcosBtn");
+    pcosData.style.backgroundColor="#e86669"
+   
+    pcosData.style.color="white"
+    type="pcos"
+      appendData(type)
+}
+
+document.getElementById("feminineBtn").addEventListener("click",feminineFn)
+
+function feminineFn(){
+    buttonColor()
+    let feminineData=document.getElementById("feminineBtn");
+    feminineData.style.backgroundColor="#5e93bd"
+   
+    feminineData.style.color="white"
+
+    type="feminineCare"
+
+      appendData(type)
+}
+
+hairFn()
+
+
+  function buttonColor(){
+            let hairData=document.getElementById("hairBtn");
+            hairData.style.backgroundColor="#efedf5"
+           
+            hairData.style.color="#66509a"
+        
+        
+            let skinData=document.getElementById("skinBtn");
+            skinData.style.backgroundColor="#fbf3e9"
+        
+            skinData.style.color="#d8892b"
+        
+            let weightData=document.getElementById("weightBtn");
+            weightData.style.backgroundColor="#e8f0ef"
+           
+             weightData.style.color="#1a6c5e"
+        
+             let pcosData=document.getElementById("pcosBtn");
+            pcosData.style.backgroundColor="#fdeff0"
+           
+            pcosData.style.color="#e86669"
+        
+            let feminineData=document.getElementById("feminineBtn");
+            feminineData.style.backgroundColor="#eff4f8"
+           
+            feminineData.style.color="#5e93bd"
+        
+        }
+
+
+function appendData(type){
+ 
+    productDisplyMainSubtype=[];
+   
+    productDisplyMain.innerHTML=null;
+        let count = 0;
+        
+   
+
+    
+        productList.forEach(function (el) {
+            
+          if (el.category == type) {
+            productDisplyMainSubtype.push(el);
+              count++
+            let productDiv = document.createElement("div");
+         
+            
+    
+            let img = document.createElement("img");
+            img.src = el.imageUrl;
+            img.style.borderRadius="20px"
+    
+            let contentDiv=document.createElement("div");
+            contentDiv.style.height="180px"
+    if(el.mrp==el.price){
+        var price = document.createElement("p");
+            price.textContent ="₹" +el.price;
+            price.style.fontSize="23px"
+            price.style.fontWeight="bold"
+    }
+
+    else{
+        var price = document.createElement("p");
+           
+            price.innerHTML=`₹ ${el.price} <span class="mrpValue"> &nbsp${el.mrp}&nbsp</span>`
+            price.style.fontSize="23px"
+            price.style.fontWeight="bold"
+    }
+           
+
+
+            let title = document.createElement("p");
+            title.textContent = el.productName;
+    
+            let useFor = document.createElement("p");
+            useFor.innerHTML = `<span style="font-weight: bold; color: blue;">FOR</span> ${el.productUses}`;
+    
+            let useWith = document.createElement("p");
+            useWith.innerHTML = `<span style="font-weight: bold; color: blue;">WITH</span> ${el.productMade}`;
+
+
+            let addCartBtn=document.createElement("button");
+            addCartBtn.textContent="Add to Cart"
+            addCartBtn.addEventListener("click",function(){
+                addToCartFn(el)
+            });
+
+            contentDiv.setAttribute("id","contentDivId");
+            contentDiv.append(title, price, useFor,useWith)
+            productDiv.append(img, contentDiv,addCartBtn);
+            img.addEventListener("click",function(){
+                individualShowFn(el)
+            })
+    
+            productDisplyMain.append(productDiv);
+          }
+        });
+        document.getElementById("itemCount").innerHTML=`${count}&nbsp products`
+        status=false;
+   
+    }
+
+
+
+ function individualShowFn(el){
+     localStorage.setItem("individualShowData",JSON.stringify(el))
+    window.location.href="productDetails.html"
+ } 
+
+document.getElementById("kitesBtn").addEventListener("click",kitsFn);
+function kitsFn(){
+    let subtype="kits"
+status=true;
+    appendData1(type,subtype)
+
+}
+
+document.getElementById("allBtn").addEventListener("click",allFn);
+function allFn(){
+    let subtype="all"
+
+    appendData(type,subtype)
+
+}
+
+document.getElementById("singleBtn").addEventListener("click",singleFn);
+function singleFn(){
+    let subtype="single"
+    status=true;
+    appendData1(type,subtype)
+
+}
+
+
+var addToCartData=JSON.parse(localStorage.getItem("addToCartData"))||[];
+
+function addToCartFn(el){
+    console.log(addToCartData.length);
+    console.log(el)
+    var status=false;
+
+    for(let i=0; i<addToCartData.length; i++){
+        if(el.productName==addToCartData[i].productName){
+            status=true; 
+        }
+    }
+
+
+
+if(status==false){
+    
+    addToCartData.push(el)
+
+    localStorage.setItem("addToCartData",JSON.stringify(addToCartData));
+   
+    
+}else{
+    alert("already added")
+}
+
+  }
+
+
+
+          
+function appendData1(type,subtype){   
+ productDisplyMain.innerHTML=null;
+     let count = 0; 
+ 
+     productDisplyMainSubtype.forEach(function (el) {
+         
+       if (el.category == type&&el.subCategory==subtype) {
+        //  productDisplyMainSubtype.push(el);
+           count++
+         let productDiv = document.createElement("div");
+         // productDiv.style.width="200px"
+         
+ 
+         let img = document.createElement("img");
+         img.src = el.imageUrl;
+         img.style.borderRadius="20px"
+ 
+         let contentDiv=document.createElement("div");
+         contentDiv.style.height="180px"
+ if(el.mrp==el.price){
+     var price = document.createElement("p");
+         price.textContent ="₹" +el.price;
+         price.style.fontSize="23px"
+         price.style.fontWeight="bold"
+ }
+
+ else{
+     var price = document.createElement("p");
+         // price.textContent ="₹" +el.price +"  "+el.mrp; 
+         price.innerHTML=`₹ ${el.price} <span class="mrpValue"> &nbsp${el.mrp}&nbsp</span>`
+         price.style.fontSize="23px"
+         price.style.fontWeight="bold"
+ }
+        
+
+
+         let title = document.createElement("p");
+         title.textContent = el.productName;
+ 
+         let useFor = document.createElement("p");
+         useFor.innerHTML = `<span style="font-weight: bold; color: blue;">FOR</span> ${el.productUses}`;
+ 
+         let useWith = document.createElement("p");
+         useWith.innerHTML = `<span style="font-weight: bold; color: blue;">WITH</span> ${el.productMade}`;
+
+
+         let addCartBtn=document.createElement("button");
+         addCartBtn.textContent="Add to Cart"
+         addCartBtn.addEventListener("click",function(){
+             addToCartFn(el)
+         });
+
+         contentDiv.setAttribute("id","contentDivId");
+         contentDiv.append(title, price, useFor,useWith)
+         productDiv.append(img, contentDiv,addCartBtn);
+
+         img.addEventListener("click",function(){
+                individualShowFn(el)
+            })
+ 
+         productDisplyMain.append(productDiv);
+       }
+     });
+     document.getElementById("itemCount").innerHTML=`${count}&nbsp products`
+     status=false;
+
+ }
+
+</script>
