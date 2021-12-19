@@ -1,0 +1,1168 @@
+#productDetailsDiv {
+  width: 90%;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+#productImageDiv {
+   border: 0px solid blue; 
+}
+#completeProductDetails {
+   border: 0px solid green;
+}
+
+/* the below css part belongs product images */
+
+#next_product_imageDiv {
+  width: 100%;
+  height: 70%;
+  margin: auto;
+}
+#next_product_image {
+  width: 100%;
+  height: 100%;
+}
+#next_product_sub_image {
+  display: grid;
+  grid-template-columns: repeat(5, 19%);
+  justify-content: space-between;
+}
+.next_sub_image {
+  /* border: 1px solid green; */
+  height: 100px;
+}
+.next_image_sub {
+  width: 100%;
+  height: 100%;
+}
+
+#next_left_arrow {
+  position: relative;
+  padding: 10px;
+  border: 1px solid grey;
+  display: inline-block;
+  font-size: 30px;
+  bottom: 32%;
+  margin-left: 3%;
+  border-radius: 30%;
+  cursor: pointer;
+}
+#next_right_arr {
+  position: relative;
+  padding: 10px;
+  border: 1px solid grey;
+  display: inline-block;
+  font-size: 30px;
+  bottom: 32%;
+  margin-left: 77%;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+/* the below css part belongs product details like name, price, rating, pincode */
+
+#next_product_heading {
+  font-size: 120%;
+  margin-left: 4%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#next_product_name {
+  font-size: 160%;
+  margin-left: 4%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#next_rupee_symbol {
+  font-size: 140%;
+  margin-left: 4%;
+  /* border:1px solid red; */
+  position: relative;
+}
+#next_product_price {
+  font-size: 45px;
+  font-weight: bolder;
+  /* border:1px solid red; */
+}
+#next_rating {
+  /* border: 1px solid blue; */
+  font-size: 130%;
+  margin-left: 4%;
+  display: inline-block;
+  padding: 1%;
+}
+#next_star_rating {
+  /* border: 1px solid red; */
+  font-size: 130%;
+  margin-right: 6%;
+  display: inline-block;
+  padding: 1%;
+  color: gold;
+}
+#next_reviews {
+  /* border: 1px solid green; */
+  display: inline-block;
+  font-size: 130%;
+}
+#next_reviews_head {
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: inline-block;
+  font-size: 130%;
+}
+#next_sold {
+  /* border: 1px solid blueviolet; */
+  display: inline-block;
+  font-size: 130%;
+}
+#next_product_sold {
+  /* border: 1px solid blueviolet; */
+  display: inline-block;
+  font-size: 130%;
+}
+#addToCart_button {
+  margin-left: 4%;
+  font-size: 150%;
+  width: 31%;
+  /* margin-top: 1%; */
+  margin-top: 1%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#buynow_button {
+  margin-left: 4%;
+  font-size: 150%;
+  width: 31%;
+  margin-top: 5%;
+  padding: 15px;
+  background-color: #66509a;
+  color: white;
+  border-radius: 15px;
+  border: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#check_delivery_line {
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 130%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#enter_pincode_text {
+  margin-left: 4%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+}
+#next_pincode {
+  padding: 10px;
+  margin-left: 4%;
+  font-size: 110%;
+  border-radius: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#next_pincode_submit {
+  margin-left: 4%;
+  font-size: 120%;
+  width: 31%;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: #66509a;
+  color: white;
+  border-radius: 4px;
+  border: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#next_pincode_available {
+  margin-left: 4%;
+  margin-top: 3%;
+  font-size: 120%;
+  color: green;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: none;
+  overflow: hidden;
+}
+
+/* the below css part is for popular products regimes */
+
+#next_popular_heading_div {
+  display: flex;
+  gap: 1%;
+  font-size: 150%;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#next_popular_div {
+  /* border:1px solid red; */
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+.next_popular_products {
+  border: 1px solid grey;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+
+#next_popular_image {
+  width: 35%;
+  /* height:100%; */
+  height: 150px;
+  display: inline-block;
+  /* border:1px solid green; */
+  vertical-align: top;
+  border-radius: 16px;
+  margin-top: 0px;
+}
+#next_popular_textDiv {
+  display: inline-block;
+  font-size: 120%;
+  vertical-align: top;
+  /* border:1px solid black; */
+  width: 60%;
+  margin-left: 3%;
+  margin-top: 0px;
+}
+
+#next_popular_name {
+  /* border:1px solid green; */
+  font-size: 120%;
+  margin-top: 6%;
+}
+
+#next_popular_price {
+  /* border:1px solid green; */
+  font-size: 120%;
+  margin-top: -10px;
+}
+
+#next_popular_forTag {
+  display: inline-block;
+  /* border:1px solid green; */
+  margin-top: -10px;
+  color: blue;
+  margin-right: 2%;
+}
+
+#next_popular_uses {
+  display: inline-block;
+  /* border:1px solid green; */
+  margin-top: -10px;
+}
+
+#next_popular_saveTag {
+  /* border:1px solid red; */
+  /* width:20%; */
+  position: relative;
+  width: 20%;
+  border-radius: 8px;
+  top: 13%;
+  margin-left: 2%;
+  vertical-align: top;
+  background-color: #ffec6b;
+  font-weight: bold;
+  font-size: 110%;
+  padding: 3px;
+}
+
+/* <!-- the below are how the product made and uses of the product --> */
+
+#next_product_contentDiv {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 21px;
+}
+
+#next_content_1 {
+  font-size: 145%;
+}
+
+.next_content_highlight {
+  font-weight: bold;
+}
+
+#next_ingredients_head {
+  margin-left: 10%;
+  font-size: 245%;
+}
+
+#next_ingredient_boxDiv {
+  margin: auto;
+  display: grid;
+  width: 75%;
+  grid-template-columns: 45% 45%;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+}
+
+.next_ingredients_boxDiv {
+  border-radius: 25px;
+  height: 300px;
+  /* border: 1px solid red; */
+  background-color: #66509a;
+  color: white;
+}
+.next_ingredients_text1 {
+  width: 80%;
+  margin-left: 8%;
+  margin-top: 8%;
+  font-size: 240%;
+  /* border: 1px solid red; */
+}
+.next_ingredient_text2 {
+  margin-top: -20px;
+  width: 80%;
+  margin-left: 8%;
+  font-size: 140%;
+  /* border: 1px solid red; */
+  height: 80px;
+}
+.next_ingredients_learnMore {
+  margin-left: 8%;
+  font-size: 170%;
+  /* border: 1px solid red; */
+  padding: 2%;
+  width: 30%;
+  text-align: center;
+  color: #66509a;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* the below css part is for product details expand work */
+
+#next_expand_slide_Div {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid red; */
+  margin-top: 2%;
+}
+.next_expand_heading {
+  font-size: 180%;
+  border: 1px solid green;
+  padding: 18px;
+  display: inline-block;
+  width: 98%;
+  background-color: white;
+  border-radius: 10px;
+}
+/* .next_expand_downArrow{
+  margin-right:0%;;
+  font-size:110%;
+  border: 1px solid green;
+
+} */
+#next_expand_hide1 {
+  display: none;
+}
+#next_expand_slide1Div {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+.next_expand_slide1_box {
+  border: 0px solid red;
+}
+.expand_slide_box_head {
+  font-size: 140%;
+  color: #66509a;
+  font-weight: 900;
+}
+.expand_slide_box_para {
+  font-size: 130%;
+}
+#next_expand_slide2Div {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+
+/* the below css part is for safe and effective hair vitamins */
+
+#safe_effective_heading {
+  font-size: 240%;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+#safe_effective_sub {
+  font-size: 150%;
+  margin-left: 10%;
+  margin-top: -26px;
+}
+
+#safe_effective_image_mainDiv {
+  display: flex;
+  width: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin: auto;
+}
+
+.safe_effective_box {
+  /* border: 1px solid green; */
+  width: 49%;
+}
+#safe_effective_box1 {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  justify-content: space-between;
+  height: 400px;
+}
+
+#safe_effective_box2 {
+  height: 600px;
+}
+
+.safe_effective_smallBox {
+  /* border: 1px solid red; */
+  height: 120px;
+  background-color: white;
+  margin-bottom: 3%;
+  border-radius: 17px;
+  background-color: #eeebf5;
+}
+.safe_effective_small_img {
+  width: 45px;
+  margin: 3%;
+}
+.safe_effective_small_text {
+  margin: 3%;
+  font-size: 130%;
+  font-weight: 300;
+  font-family: "Nunito", sans-serif;
+}
+
+#safe_effective_rightSide_img {
+  width: 100%;
+}
+
+/* the below css part is explore section */
+
+#next_product_exploreMainDiv {
+  height: 260px;
+  background-color: black;
+  margin-top:11%;
+  width:100%;
+}
+#next_product_explore_div1{
+color:white;
+
+display: inline-block;
+width:40%;
+
+}
+#next_product_explore_div2{
+
+  display:inline-block;
+  width:50%;
+}
+#next_product_explore_div2_sub{
+  display:grid;
+  grid-template-columns: 180px 180px;
+  position:relative;
+  top:-85px;
+  margin-left:50%;
+  gap:5%;
+}
+#next_product_explore_div1_head{
+  font-family: 'Nunito', sans-serif;
+  font-size:300%;
+  margin-left:17%;
+}
+#next_product_explore_div1_sub{
+  font-family: 'Nunito', sans-serif;
+  font-size:130%;
+  margin-left:17%;
+  margin-top:-45px;
+}
+#next_product_explore_div1_viewAll{
+  font-family: 'Nunito', sans-serif;
+  font-size:130%;
+  margin-left:17%;
+  padding:10px;
+  width:25%;
+  border-radius:15px;
+  background-color: white;
+  color:black;
+  font-weight: 900;
+}
+.next_product_explore_div2Image{
+  background-color: white;
+
+  margin-bottom: 5%;
+  border-radius: 15px;
+  height:180px;
+  
+}
+.next_product_explore_div2_imageUrl{
+  width:100%;
+  height: 100%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  #productDetailsDiv {
+    grid-template-columns: 100%;
+  }
+  #next_left_arrow {
+    padding: 5px;
+    font-size: 25px;
+    bottom: 40%;
+  }
+  #next_right_arr {
+    padding: 5px;
+    font-size: 25px;
+    bottom: 40%;
+    margin-left: 80%;
+  }
+
+  #next_product_heading {
+    font-size: 100%;
+  }
+  #next_product_name {
+    font-size: 150%;
+  }
+  #next_rupee_symbol {
+    font-size: 140%;
+  }
+  #next_product_price {
+    font-size: 30px;
+  }
+  #next_rating {
+    font-size: 110%;
+  }
+
+  #addToCart_button {
+    font-size: 110%;
+    padding: 10px;
+    margin-top: 3%;
+  }
+  #buynow_button {
+    font-size: 110%;
+    margin-top: 3%;
+    padding: 10px;
+  }
+  #check_delivery_line {
+    font-size: 120%;
+  }
+  /* #enter_pincode_text {
+        
+      } */
+  #next_pincode {
+    font-size: 100%;
+  }
+  #next_pincode_submit {
+    font-size: 100%;
+  }
+  #next_pincode_available {
+    font-size: 110%;
+  }
+
+  /* the part is for next_popular product regimes */
+  #next_popular_heading_div {
+    font-size: 100%;
+  }
+  #next_popular_div {
+    width: 80%;
+    grid-template-columns: 100%;
+  }
+
+  #next_popular_textDiv {
+    margin-left: 2%;
+  }
+
+  #next_popular_name {
+    font-size: 100%;
+  }
+
+  #next_popular_price {
+    font-size: 100%;
+  }
+
+  #next_popular_saveTag {
+    width: 25%;
+  }
+
+  /*  this part is for powerful ingerdients bos  */
+
+  #next_product_contentDiv {
+    width: 90%;
+    margin-left: 7%;
+    font-size: 21px;
+  }
+
+  #next_content_1 {
+    font-size: 125%;
+  }
+
+  #next_ingredients_head {
+    margin-left: 7%;
+    font-size: 205%;
+  }
+
+  #next_ingredient_boxDiv {
+    width: 90%;
+    grid-template-columns: 49% 49%;
+  }
+
+  .next_ingredients_boxDiv {
+    height: 300px;
+  }
+  .next_ingredients_text1 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 200%;
+  }
+  .next_ingredient_text2 {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 110%;
+  }
+  .next_ingredients_learnMore {
+    margin-left: 5%;
+    font-size: 100%;
+    width: 50%;
+  }
+
+  /* this below work is for expand works */
+
+  #next_expand_slide_Div {
+    width: 90%;
+  }
+  .next_expand_heading {
+    font-size: 150%;
+
+    padding: 13px;
+  }
+
+  #next_expand_slide1Div {
+    grid-template-columns: 49% 49%;
+  }
+  .expand_slide_box_head {
+    font-size: 110%;
+  }
+  .expand_slide_box_para {
+    font-size: 110%;
+  }
+  #next_expand_slide2Div {
+    grid-template-columns: 49% 49%;
+  }
+
+  /* the below css part is for safe and effective hair vitamins */
+
+  #safe_effective_heading {
+    font-size: 200%;
+    margin-left: 5%;
+  }
+
+  #safe_effective_sub {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: -20px;
+  }
+
+  #safe_effective_image_mainDiv {
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .safe_effective_box {
+    width: 100%;
+  }
+  #safe_effective_box1 {
+    grid-template-columns: 32% 32% 32%;
+  }
+
+  #safe_effective_box2 {
+    height: 300px;
+  }
+
+  .safe_effective_smallBox {
+    margin-bottom: 0%;
+    border-radius: 17px;
+  }
+  .safe_effective_small_img {
+    width: 35px;
+    margin: 3%;
+  }
+  .safe_effective_small_text {
+    font-size: 120%;
+  }
+
+  #safe_effective_rightSide_img {
+    height: 100%;
+    width: 80%;
+    margin-left: 20%;
+  }
+
+  /* the below css part product explore part */
+ 
+  #next_product_exploreMainDiv {
+    height: 220px;
+    margin-top:8%;
+  }
+  #next_product_explore_div1{
+  color:white;
+ 
+  display: inline-block;
+  width:40%;
+  
+  }
+  #next_product_explore_div2{
+  
+    display:inline-block;
+    width:55%;
+  }
+  #next_product_explore_div2_sub{
+    display:grid;
+    grid-template-columns: 110px 110px;
+    position:relative;
+    top:-70px;
+    margin-left:8%;
+    gap:5%;
+  }
+  #next_product_explore_div1_head{
+    font-size:250%;
+    margin-left:8%;
+    margin-top:20px;
+  }
+  #next_product_explore_div1_sub{
+    font-size:110%;
+    margin-left:8%;
+    margin-top:-45px;
+  }
+  #next_product_explore_div1_viewAll{
+   
+    font-size:110%;
+    margin-left:8%;
+    padding:10px;
+    width:50%;
+  }
+  .next_product_explore_div2Image{
+    background-color: white;
+ 
+    margin-bottom: 5%;
+    border-radius: 15px;
+    height:110px;
+    
+  }
+  .next_product_explore_div2_imageUrl{
+    width:100%;
+    height: 100%;
+    
+  }
+
+
+  /* the below css part is explore section */
+
+#next_product_exploreMainDiv {
+  height: 260px;
+  background-color: black;
+  margin-top:11%;
+  width:100%;
+}
+#next_product_explore_div1{
+color:white;
+
+display: inline-block;
+width:40%;
+
+}
+#next_product_explore_div2{
+  /* border:1px solid green; */
+  display:inline-block;
+  width:50%;
+}
+#next_product_explore_div2_sub{
+  display:grid;
+  grid-template-columns: 40% 40%;
+  position:relative;
+  margin-left:15%;
+  gap:5%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+  #next_left_arrow {
+    font-size: 25px;
+    bottom: 42%;
+  }
+  #next_right_arr {
+    font-size: 25px;
+    bottom: 59%;
+    margin-left: 85%;
+  }
+  #next_product_name {
+    font-size: 150%;
+  }
+
+  #next_product_price {
+    font-size: 35px;
+  }
+  #next_rating {
+    font-size: 120%;
+  }
+
+  #addToCart_button {
+    font-size: 120%;
+    width: 35%;
+    padding: 12px;
+  }
+
+  #buynow_button {
+    font-size: 120%;
+    width: 35%;
+    padding: 12px;
+  }
+  #check_delivery_line {
+    font-size: 120%;
+  }
+
+  #next_pincode_submit {
+    font-size: 110%;
+    padding: 3%;
+  }
+  #next_pincode_available {
+    font-size: 110%;
+  }
+
+  /* the below is for popupar products regimes */
+
+  #next_popular_div {
+    /* border:1px solid red; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+
+  /* the below css part is for ingrendients boxes */
+
+  #next_ingredients_head {
+    margin-left: 8%;
+    font-size: 185%;
+  }
+
+  #next_ingredient_boxDiv {
+    width: 90%;
+    grid-template-columns: 47% 47%;
+  }
+
+  .next_ingredients_boxDiv {
+    background-color: #66509a;
+    color: white;
+  }
+  .next_ingredients_text1 {
+    font-size: 200%;
+  }
+  .next_ingredient_text2 {
+    font-size: 130%;
+  }
+  .next_ingredients_learnMore {
+    font-size: 140%;
+  }
+
+  /* this is for product expand slides */
+
+  #next_expand_slide_Div {
+    width: 90%;
+  }
+  .next_expand_heading {
+    font-size: 150%;
+    border: 1px solid green;
+    padding: 15px;
+  }
+  .expand_slide_box_head {
+    font-size: 120%;
+  }
+  .expand_slide_box_para {
+    font-size: 110%;
+  }
+
+
+  
+}
+
+
+
+
+
+/* the below css part is consumer stydy of the product */
+
+#consumer_study_div1{
+  font-family: 'Nunito', sans-serif;
+}
+#consumer_study_div1_head{
+  font-size:360%;
+  font-weight: 900;
+  margin-left:10%;
+  margin-top:6%;
+
+}
+#consumer_study_div1_sub{
+  font-size:150%;
+  margin-left:10%;
+  margin-top:-40px;
+}
+
+#consumer_study_div2{
+  width:80%;
+  margin:auto;
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  justify-content: space-between;
+  font-family: 'Nunito', sans-serif;
+}
+.consumer_study_div2_box{
+  height:140px;
+  /* border:1px solid red; */
+  margin-top:25%;
+  background-color: #EEEBF5;
+  border-radius: 17px;
+
+}
+.consumer_study_div2_number{
+  display: inline-block;
+  font-size:100px;
+  /* border:1px solid red; */
+  line-height: 100px;
+  position:relative;
+  margin-left:6%;
+  top:-100%;
+  color:#66509A;
+}
+.consumer_study_div2_per{
+display: inline-block;
+font-size:50px;
+line-height: 55px;
+/* border:1px solid red; */
+position: relative;
+top:-100%;
+color:#66509A;
+
+}
+.consumer_study_div2_text{
+/* border:1px solid red; */
+position: relative;
+top:-170%;
+margin-left:6%;
+width:90%;
+font-size:130%;
+font-weight: 600;
+}
+
+@media screen and (min-width:300px) and (max-width:750px){
+
+  #consumer_study_div1_head{
+    font-size:260%;
+    margin-left:5%;
+    margin-top:3%;
+  
+  }
+  #consumer_study_div1_sub{
+    font-size:120%;
+    margin-left:5%;
+    margin-top:-30px;
+  }
+  
+  #consumer_study_div2{
+    width:90%;
+    grid-template-columns: 49% 49%;
+  }
+  .consumer_study_div2_box{
+    height:140px;
+   
+    margin-top:25%;
+    background-color: #EEEBF5;
+  
+  }
+  .consumer_study_div2_number{
+  
+    font-size:80px;
+    line-height: 100px;
+    top:-90%;
+  
+  }
+  .consumer_study_div2_per{
+
+  font-size:35px;
+  line-height: 55px;
+  top:-90%;
+ 
+  
+  }
+  .consumer_study_div2_text{
+  top:-145%;
+  font-size:110%;
+ 
+  }
+}
+
+@media screen and (min-width:750px) and (max-width:1200px){
+
+  #consumer_study_div1_head{
+    font-size:300%;
+    margin-left:7%;
+  
+  }
+  #consumer_study_div1_sub{
+    font-size:130%;
+    margin-left:7%;
+    
+  }
+  
+  #consumer_study_div2{
+    width:90%;
+  
+    grid-template-columns: 45% 45%;
+
+  }
+  .consumer_study_div2_box{
+    margin-top:17%;
+    background-color: #EEEBF5;
+  
+  }
+  .consumer_study_div2_number{
+    
+    font-size:90px;
+    top:-95%;
+
+  }
+  .consumer_study_div2_per{
+ 
+  font-size:45px;
+  top:-95%;
+  
+  
+  }
+  .consumer_study_div2_text{
+  top:-155%;
+  }
+}
+
+
+
+/* <!-- the below section is for Doctors Notes section of products --> */
+
+#doctors_notes_heading{
+  font-size: 360%;
+  font-family: 'Nunito', sans-serif;
+  margin-left:10%;
+}
+
+#doctors_notes_doctorsDiv{
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap:5%;
+  width:80%;
+  margin-left:10%;
+  border-radius: 17px;
+
+}
+.doctors_notes_doctorsBox{
+  /* border: 1px solid red; */
+border-radius: 17px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color:#EEEBF5;
+}
+.doctors_notes_doctorsBox_imageDiv{
+  border:0px solid green;
+}
+.doctors_notes_doctorsBox_image{
+  width:60%;
+  height: 60%;
+  margin:14%;
+  border-radius: 10px;
+}
+.doctors_notes_doctorsBox_text{
+  border:0px solid green;
+}
+.doctors_notes_doctorsBox_text_name{
+  font-family: 'Nunito', sans-serif;
+  color:#66509a;
+}
+.doctors_notes_doctorsBox_text_text{
+  font-family: 'Nunito', sans-serif;
+  width:90%;
+}
+
+@media screen and (min-width:750px) and (max-width:1200px){
+  #doctors_notes_doctorsDiv{
+  
+    grid-template-columns: 48% 48%;
+   justify-content: space-between;
+    width:90%;
+    margin-left:7%;
+  
+  
+  }
+}
+
+
+@media screen and (min-width:300px) and (max-width:750px){
+  #doctors_notes_doctorsDiv{
+  
+    grid-template-columns: 90%;
+   justify-content: space-between;
+    width:90%;
+    margin:auto;
+  
+  
+  }
+}
