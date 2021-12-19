@@ -1,0 +1,167 @@
+
+#bigImg img{
+    width: 100%;
+}
+
+#productSingle{
+    width: 80%;
+    /* display: grid;
+    grid-template-rows: 45% 40%; */
+    
+    margin: auto;
+    margin-top: 100px;
+}
+#topPro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: 45% 40%; */
+}
+#imgPro{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+#detailPro{
+    width: 35%;
+}
+#btnPro{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#addCart{
+    height: 50px;
+    border-radius: 8px;
+    border: 0;
+    color: white;
+    /* margin-left: 20px; */
+    background-color: #222;
+    width: 48%;
+    font-size: 17px;
+}
+#addCart:hover{
+    opacity: .7;
+}
+#buyNow{
+    border: 0px;
+    background-color: rgb(102, 80, 154);
+    height: 50px;
+    color: white;
+    width: 48%;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+#productSingle input{
+    height: 40px;
+    box-shadow: none;
+    outline: none;
+    background: white;
+    border: 1px solid rgb(224, 224, 224);
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    margin: 0px 20px 0px 0px;
+    padding: 5px 5px 5px 45px;
+}
+
+#ratingPro{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    color: grey;
+}
+#rating i{
+    color: rgb(255, 187, 0);
+}
+#ratingPro>div{
+    padding-left: 10%;
+    width: 33%;
+    border-right: 1px solid grey;
+}
+
+#pincode{
+    background: rgb(231, 231, 231);
+    border-radius: 12px;
+    margin-top: 1rem;
+    padding: 18px;
+}
+#pincode button{
+    height: 40px;
+    max-width: 210px;
+    outline: none;
+    background: rgb(0, 0, 0);
+    border-radius: 4px;
+    margin: 1px 0px;
+    padding: 0 13px;
+    font-size: 14px;
+    font-weight: 800;
+    opacity: 0.4;
+    color: white;
+    border: 0;
+}
+
+
+#priceDiv{
+    display: flex;
+
+}
+#mrp{
+    letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: line-through;
+  font-size: 22px;
+  line-height: 46px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+#price {
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: 700;
+    color: #111d3c;
+  }
+  #price span {
+    color: #111d3c;
+    font-size: 20px;
+  }
+
+  #title{
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+  }
+
+  #for{
+    margin: 0px;
+    color: rgb(108, 108, 108);
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.15px;
+  }
+  #popular{
+      display: flex;
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #popular #cardDiv{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 22px;
+    justify-content: flex-start;
+  }
+
+  #popular #cardDiv img{
+      width: 100%;
+
+  }

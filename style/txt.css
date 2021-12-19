@@ -1,0 +1,412 @@
+
+
+/* ............................................................. */
+
+#cut {
+  text-decoration: line-through;
+}
+.bg-clr {
+  border-radius: 10px;
+  border: 1px solid grey;
+  width: 90%;
+  background-color: white;
+  margin-bottom: 3%;
+}
+#inpt-div {
+  /* border: 1px solid red; */
+  margin-top: 3%;
+  margin-left: 5%;
+}
+#html {
+  width: 18px;
+  height: 18px;
+  border: 1px solid blue;
+}
+.adr-input {
+  margin-left: 3%;
+  margin-top: 0.1%;
+}
+#edt-dv {
+  margin-left: 8%;
+  line-height: 3px;
+}
+
+#edt {
+  color: #eda85c;
+}
+
+#first-bx-ad-nw {
+  border: 1px solid white;
+  /* height: 90px; */
+  margin-bottom: 3%;
+  width: 95%;
+  margin-left: 2.5%;
+  border-radius: 13px;
+  background-color: white;
+  height: 45px;
+}
+.mrgn-tp{
+  margin-top: 2%;
+}
+
+#html1 {
+  width: 18px;
+  height: 18px;
+  border: 1px solid blue;
+}
+
+#ad-nw-adr {
+  /* border: 1px solid red; */
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+.adr-input1 {
+  font-weight: bold;
+}
+
+#cont-adr {
+  height: 225px;
+}
+
+/* STYLING PART OF ADRESS ENDS HERE */
+
+/* STYLING OF PAYMENT MODE OF PAYMENT */
+.pay-hd {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin-left: 5%;
+}
+.grn {
+  color: green;
+  /* text-align: center; */
+  margin-top:   2%;
+}
+#Paytm {
+  width: 98%;
+  margin-left: 2.5%;
+  margin-top: 5%;
+}
+#pay-tm {
+  margin-right: 3%;
+  width: 48px;
+  height: 48px;
+}
+.paytm-dwn {
+  /* border: 1px solid orange; */
+  text-align: center;
+  width: 88%;
+  margin-left: 6%;
+  height: 170px;
+  margin-top: 2%;
+  background-color: #f6f6f6;
+  color: green;
+  line-height: 188%;
+}
+
+#btn-dv {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+
+.btn-mn {
+  width: 100%;
+  height: 35px;
+  background-color: black;
+  color: white;
+  margin-top: 2%;
+}
+
+/* PAY VIA UPI END HERE */
+
+.dw1 {
+  background-color: #f6f6f6;
+  width: 88%;
+  margin-left: 6%;
+  margin-top: 0%;
+  text-align: center;
+}
+#Card-details {
+  width: 70%;
+  /* border: 1px solid red; */
+  background-color: white;
+  margin-left: 15%;
+  text-align: left;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+/* #ad-crd-flx {
+  border: 1px solid blueviolet;
+} */
+#rdo {
+  margin-top: 5%;
+  margin-right: 3%;
+}
+
+.expr-cvv {
+  margin-right: 5%;
+}
+
+/* Credit / Debit Card (20% CB) styling ends here*/
+
+.dw3 {
+  width: 70%;
+  margin-left: 6%;
+  margin-top: 0%;
+  text-align: center;
+}
+
+.div-img-bnk {
+  background-color: #f6f6f6;
+  width: 40%;
+  height: 70px;
+  margin-left: 8%;
+  /* line-height: 7%; */
+}
+.img-bnk {
+  width: 80%;
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 15%;
+}
+#bnk-dtls {
+  width: 70%;
+  margin-left: 10%;
+}
+
+#slct {
+  margin-top: 3%;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 35px;
+}
+
+/* Net Banking (20% CB)  RND HERE*/
+
+#Cont-Wallet {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin-left: 5%;
+}
+.dn5 {
+  /* border: 1px solid navy; */
+  width: 90%;
+  margin-left: 5%;
+  text-align: center;
+}
+.bg-clr-dwn {
+  background-color: #f6f6f6;
+  height: 70px;
+}
+.pdwn {
+  color: green;
+  text-align: center;
+}
+
+/* Buy Now Pay Later ENDS HERE */
+
+.dn6 {
+  /* border: 1px solid navy; */
+  width: 90%;
+  margin-left: 5%;
+}
+.dn8 {
+  /* border: 1px solid orange; */
+  width: 90%;
+  margin-left: 5%;
+  height: 200px;
+  background-color: #f6f6f6;
+}
+.grn1 {
+  color: green;
+  line-height: 200%;
+  text-align: center;
+}
+#MNB {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.dn9 {
+  /* border: 1px solid orange;
+  width: 90%; */
+  margin-left: 5%;
+
+  background-color: #f6f6f6;
+}
+
+/* RIGHT SIDE COLUMN SETTINGS */
+
+
+
+
+/* APPLY DISCOUNT STARTS HERE  */
+
+.HD-CN{
+  display: none;
+}
+
+#apl-dsc {
+  width: 95%;
+  margin-left: 2.5%;
+  cursor: pointer;
+}
+
+.h3-sd-bx {
+  width: 90%;
+  margin-left: 3%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  height: 50px;
+  margin-top: 4%;
+}
+.pr-in-cp {
+  width: 75%;
+
+}
+
+#inpt-cpn {
+  margin-top: 2%;
+  margin-right: 2%;
+  /* position: fixed; */
+}
+
+.inpt-div {
+  width: 90%;
+  border: 1px solid pink;
+  margin-left: 4%;
+}
+#CPN-CODE {
+  width: 60%;
+  height: 25px;
+  border-radius: 23px;
+  margin-left: 5%;
+}
+#cpn-btn {
+  border-radius: 23px;
+  margin-left: -10%;
+  background-color: #a0a5b1;
+  height: 32px;
+  color: white;
+  width: 25%;
+}
+#rtat2 {
+  margin-top: 3%;
+  cursor: pointer;
+}
+
+.Hide-cont {
+  display: flex;
+  display: none;
+  margin-bottom: 2%;
+}
+
+.rfr-cd {
+  /* border: 1px solid black; */
+  border-radius: 13px;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 3%;
+}
+
+.rfr-para {
+  width: 78%;
+  margin-left: 2%;
+}
+
+
+#CPN-CODE2 {
+  width: 60%;
+  height: 30px;
+  border-radius: 23px;
+  margin-left: 5%;
+}
+#cpn-btn2 {
+  border-radius: 23px;
+  margin-left: -10%;
+  background-color: #a0a5b1;
+  height: 37px;
+  color: white;
+  width: 25%;
+}
+#rtat3 {
+  margin-top: 3%;
+  cursor: pointer;
+  margin-left: 1.5%;
+}
+.Hide-cont1 {
+
+  display: none;
+}
+
+
+/* APPLY DISCOUNT ENDS HERE  */
+
+.billing{
+  /* border: 1px solid red; */
+  width: 90%;
+  margin-left: 5%;
+  height: 90%;
+  margin-bottom: 2.5%;
+
+}
+.billing>div{
+  margin-top: 25px;
+}
+
+.ttl-sv{
+  border: 1px solid orangered;
+  background-color: 
+  #fffcf5;
+   
+}
+
+.side-bx{
+  border-radius: 13px;
+}
+
+.rypi{
+
+/* border: 1px solid  blue; */
+
+
+  transform: rotate(180deg);
+  display: flex;
+  height: 70%;
+
+ 
+}
+
+#rtat1{
+  width: 5%;
+  /* border: 1px solid red; */
+  margin-top: 3%;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+
+.grn3{
+  color: green;
+  margin-left: 5%;
+  margin-top: 3.5%;
+}
+
+
+
+
+
+
+#final-scrl{
+  /* border: 1px solid purple; */
+  width: 60%;
+  margin-left: 20%;
+  height: 650px;
+  overflow: auto;
+  overflow-x: auto;
+  overflow-y: none;
+  box-sizing: border-box;
+  padding-bottom: 70px;
+}

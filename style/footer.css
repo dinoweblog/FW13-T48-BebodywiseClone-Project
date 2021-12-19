@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    color: white;
+}
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Avenir Medium";
+}
+.footer{
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid white; */
+    padding: 30px 30px 90px;
+    text-align: center;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid teal; */
+}
+.footer-content{
+    /* border: 1px solid red; */
+    width: 472px;
+    margin: auto;
+}
+.footer .footer-content .top-footer ul{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+}
+.footer .footer-content ul{
+    padding: 0;
+    list-style: none;
+}
+.footer .footer-content .top-footer ul li{
+    margin: 0 15px;
+    padding: 0 15px;
+    list-style: disc;
+    color: rgb(220, 218, 215);
+}
+li{
+    display: list-item;
+}
+.footer .footer-content ul p {
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+}
+.footer .footer-content .top-footer ul li:first-child{
+    list-style: none;
+}
+.footer .footer-content .mid-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    padding: 30px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.footer .footer-content .mid-footer ul{
+    width: 35%;
+}
+.footer .footer-content .mid-footer ul li p{
+    font-size: 16px;
+}
+.footer .footer-content .bottom-footer{
+    width: 100%;
+}
+.footer .footer-content .bottom-footer .social-media-footer{
+    width: 100%;
+}
+.footer .footer-content .bottom-footer .social-media-footer ul{
+    display: flex;
+    justify-content: center;
+}
+.footer .footer-content .bottom-footer .social-media-footer ul li{
+    margin: 0 30px;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.footer .footer-content .bottom-footer .bottom-footer-text-links{
+    display: flex;
+    margin: 30px 0 0;
+    justify-content: center;
+}
+.footer .footer-content .bottom-footer .bottom-footer-text-links li:first-child{
+    margin-left: 0;
+}
+.footer .footer-content .bottom-footer .bottom-footer-text-links li{
+    margin: 0 15px;
+}
+.footer .footer-content .bottom-footer .bottom-footer-text-links li a{
+    font-size: 16px;
+}
+.footer .footer-content .bottom-footer p{
+    color: rgb(184, 180, 174);
+    font-size: 14px;
+    margin: 30px 0 0;
+}

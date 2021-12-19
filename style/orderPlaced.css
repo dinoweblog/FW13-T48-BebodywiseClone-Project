@@ -1,0 +1,382 @@
+#div_1 {
+  background-color: #d8892b;
+  height: 450px;
+  /* border: 1px solid red; */
+}
+
+#order_placed_heading {
+  text-align: center;
+  color: white;
+  font-size: 350%;
+  text-decoration: underline;
+}
+#box_1 {
+  width: 50%;
+  height: 60%;
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+}
+#hi_text {
+  margin-left: 8%;
+  display: inline-block;
+}
+#cust_name {
+  margin-left: 2%;
+  display: inline-block;
+}
+#thankyou_text {
+  margin-left: 8%;
+  font-size: 110%;
+}
+#cart_text {
+  margin-left: 4%;
+  display: inline-block;
+  font-size: 110%;
+  margin-right: 4%;
+  text-align: justify;
+}
+#cart_total_price {
+  display: inline-block;
+  font-size: 120%;
+  margin-left: 4%;
+}
+
+#delivery_div {
+  background-color: none;
+  /* border: 1px solid red; */
+  margin: auto;
+  text-align: center;
+  margin-bottom:0px;
+}
+.delivery {
+  /* margin-top: 25px; */
+  display: inline-block;
+  text-align: center;
+  font-size: 200%;
+  /* border: 1px solid red; */
+}
+
+#delivery_cart_div {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-gap: 5%;
+  /* border: 1px solid red; */
+  margin: auto;
+  /* margin-top: 30px; */
+  background-color: #E2E2E2;
+}
+
+
+#address_div{
+   
+    background-color: none;
+
+ }
+#address{
+    text-align: center;
+    width:70%;
+    padding:13px;
+    /* border: 1px solid red; */
+    background-color: #d8892b;
+    border-radius: 10px;
+    color: white;
+    margin:auto;
+    font-size: 25px;
+    
+}
+#address_hide{
+  display: none;
+}
+#address_hide_date{
+  margin-left:13%;
+  font-size: 150%;
+}
+#address_hide_deliveryTo{
+  margin-left:13%;
+  font-size: 150%;
+  font-weight: bold;
+}
+#address_hide_custName{
+  margin-left:13%;
+  font-size: 120%;
+}
+#address_hide_cityName{
+  margin-left:13%;
+  font-size: 120%;
+}
+#address_hide_state{
+  margin-left:13%;
+  font-size: 120%;
+}
+#address_hide_contactNo{
+  margin-left:13%;
+  font-size: 150%;
+}
+#address_hide_change{
+  margin-left:13%;
+  font-size: 120%;
+  font-weight: bold;
+}
+#address_hide_email{
+  margin-left:13%;
+  font-size: 120%;
+  /* border: 1px solid red; */
+  text-align: center;
+  padding:10px;
+  background-color: #6C6C6C;
+  color:white;
+  border-radius: 10px;
+}
+
+#cart_div {
+  background-color: #d8892b;
+  /* border: 1px solid green; */
+  /* height: 200px; */
+}
+
+#cart_details {
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+/* cart order details */
+#order_id {
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  /* border: 1px solid red; */
+}
+
+#confirm_tag {
+  /* border: 1px solid red; */
+  width: 5cm;
+  text-align: center;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #111d3c;
+  color: white;
+}
+
+#imageDiv {
+  /* border: 1px solid green; */
+  height: 120px;
+  display: inline-block;
+  width: 45%;
+  margin-left: 3%;
+  margin-right: 1%;
+}
+#cart_image {
+  width: 100%;
+  /* border: 1px solid black; */
+  height: 100%;
+  border-radius: 10px;
+}
+#textDiv {
+  /* border: 1px solid green; */
+  height: 120px;
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+#cart_product_name {
+  margin-left: 8%;
+}
+#cart_quantity {
+  margin-left: 8%;
+}
+#cart_product_price {
+  margin-left: 8%;
+}
+#order_receipt {
+  width: 5cm;
+  text-align: center;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #111d3c;
+  color: white;
+}
+#subtotal {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 51%;
+  color: red;
+  font-size: 20px;
+}
+#subtotal_price {
+  display: inline-block;
+  font-size: 20px;
+}
+#discount {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 50%;
+  color: green;
+  font-size: 20px;
+}
+#discount_total {
+  display: inline-block;
+  font-size: 20px;
+}
+#shipping {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 53%;
+  color: black;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+#shipping_total {
+  display: inline-block;
+  font-size: 20px;
+}
+#break_line {
+  font-weight: 10px;
+}
+#finalTotal {
+  display: inline-block;
+  margin-left: 3%;
+  margin-right: 53%;
+  color: black;
+  font-size: 20px;
+  /* border: 1px solid red; */
+}
+#final_total {
+  display: inline-block;
+  font-size: 20px;
+}
+
+#continue_shopping {
+  /* border: 1px solid red; */
+  padding: 20px;
+  background-color: #111d3c;
+  color: white;
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  border-radius: 15px;
+  font-size: 25px;
+  position: relative;
+  top: 3.6%;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .delivery {
+    font-size: 130%;
+  }
+
+  #subtotal {
+
+    margin-left: 1.5%;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+  #subtotal_price {
+    font-size: 18px;
+  }
+
+  #discount {
+    margin-left: 1.5%;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+  #discount_total {
+    font-size: 18px;
+  }
+
+  #shipping {
+    margin-left: 1.5%;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+  #shipping_total {
+    font-size: 18px;
+  }
+
+  #finalTotal {
+    margin-left: 1.5%;
+    margin-right: 30%;
+    font-size: 18px;
+  }
+  #final_total {
+    font-size: 18px;
+  }
+  #continue_shopping {
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 15px;
+    position: relative;
+    top: 2.5%;
+  }
+
+  #address{
+    padding:16px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+ 
+
+}
+
+@media screen and (min-width:0px) and (max-width:750px){
+    #order_placed_heading {
+        font-size: 250%;
+      }
+      .delivery {
+        font-size: 120%;
+      }
+      #delivery_cart_div {
+        width: 95%;
+        grid-template-columns: 100%;
+        margin-top: 30px;
+      }
+
+      #address{
+        width:95%;
+        padding:16px;
+        border-radius: 0px;
+        font-size:25px; 
+    }
+     
+
+    #address_hide_date{
+      margin-left:10%;
+      font-size: 120%;
+    }
+    #address_hide_deliveryTo{
+      margin-left:10%;
+      font-size: 140%;
+    }
+    #address_hide_custName{
+      margin-left:10%;
+      font-size: 110%;
+    }
+    #address_hide_cityName{
+      margin-left:10%;
+      font-size: 110%;
+    }
+    #address_hide_state{
+      margin-left:10%;
+      font-size: 110%;
+    }
+    #address_hide_contactNo{
+      margin-left:10%;
+      font-size: 110%;
+    }
+    #address_hide_change{
+      margin-left:10%;
+      font-size: 120%;
+    }
+    #address_hide_email{
+      margin:auto;
+      width:80%;
+      font-size: 110%;
+    }
+}
