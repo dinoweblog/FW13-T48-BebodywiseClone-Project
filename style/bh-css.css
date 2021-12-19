@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.refers-earn{
+    width: 80%;
+    margin: auto;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.refers-earn .refers-earn-inside{
+    background-color: rgb(214, 211, 208);
+    background: #f6f6f6;
+    padding: 30px;
+}
+body{
+    color: rgb(51, 56, 58);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    font-family: "Avenir Medium";
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.order-2{
+    order: 2;
+}
+.col-6, .col-md-4, .col-md-8{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-right: 15px;
+}
+.col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+img{
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.order-1{
+    order: 1;
+}
+.col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+.refers-earn .refers-earn-inside .refers-earn-info-button{
+    width: 100%;
+}
+.refers-earn .refers-earn-inside .refers-earn-info-button span{
+    color: rgb(24, 26, 27);
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+}
+.refers-earn .refers-earn-inside .refers-earn-info-button h4{
+    color: rgb(24, 26, 27);
+    font-size: 32px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+h4{
+    line-height: 1.2;
+}
+.refers-earn .refers-earn-inside .refers-earn-info-button button{
+    background-color: rgb(24, 26, 27);
+    color: rgb(220, 218, 215);
+    background: #000;
+    padding: 7px 25px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    overflow: visible;
+    font-size: inherit;
+    line-height: inherit;
+    text-align: center;
+    align-items: flex-start;
+    text-indent: 0;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.delivery-instruction{
+    width: 80%;
+    margin: auto;
+}
+.delivery-instruction .delivery-instruction-title{
+    width: 100%;
+}
+.delivery-instruction .delivery-instruction-title h2{
+    font-family: "Avenir Medium";
+    margin-top: 20px;
+    text-align: left;
+    color: rgb(24, 26, 27);
+    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    margin-left: 14px;
+    letter-spacing: .25px;
+}
+.delivery-instruction .delivery-instruction-inner{
+   
+    display: flex;
+    padding-left: 40px;
+}
+.delivery-instruction .delivery-instruction-inner .delivery-instruction-card{
+    color: rgb(24, 26, 27);
+    background: #f6f6f6;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    min-height: 112px;
+}
+.delivery-instruction .delivery-instruction-inner .delivery-instruction-card .delivery-instruction-icon{
+    margin-right: 30px;
+    padding-bottom: 0;
+    max-width: 30%;
+    width: max-content;
+    text-align: left;
+}
+.delivery-instruction .delivery-instruction-inner .delivery-instruction-card h4{
+    font-weight: 500;
+    margin: 0;
+    font-size: 20px!important;
+    line-height: 24px;
+    font-family: "Avenir-medium";
+}
+.delivery-instruction .delivery-instruction-inner .delivery-instruction-card p{
+    color: rgb(101, 109, 113);
+    font-size: 18px!important;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 25px;
+}
+.delivery-instruction .delivery-instruction-bottom{
+    padding-top: 30px;
+    margin: 60px 0;
+    padding-left: 60px;
+}
+.delivery-instruction .delivery-instruction-bottom h3{
+    font-size: 36px;
+    font-weight: lighter;
+    margin-left: 14px;
+    line-height: 49px;
+    color: rgb(24, 26, 27);
+    letter-spacing: .25px;
+    margin: 0 0 30px;
+}
+h3{
+    font-family: "Avenir-medium";
+}
+.delivery-instruction .delivery-instruction-bottom ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.delivery-instruction .delivery-instruction-bottom ul li{
+    box-shadow: rgb(24 26 27 / 7%) 0px 6.42857px 12.8571px;
+    margin: 0 8px;
+    border-radius: 20px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}

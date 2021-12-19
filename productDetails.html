@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="productDetails.css">
+    <script type="module" src="productDetails.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style/main-style.css" /> -->
+</head>
+
+<body>
+<!--   
+<div id="navbar">
+
+
+  <div id="body-container">
+    <div id="main-container">
+        <div id="navbar">
+            <ul>
+              <li id="logo">
+                <img
+                  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png"
+                  alt=""
+                />
+              </li>
+              <li>Book Doctor Consultation</li>
+              <li>Take Wellness Assessment</li>
+              <li id="dropDownBtn">
+                <span>
+                  Choose Concern<span class="material-icons">
+                    keyboard_arrow_down
+                  </span>
+                </span>
+                <ul id="dropDownMenu">
+                  <li>Hair</li>
+                  <li>Skin</li>
+                  <li>Nutrition</li>
+                  <li>PCOS</li>
+                  <li>Intimate Care</li>
+                </ul>
+              </li>
+              <li>All Products</li>
+              <li>Refer & Earn</li>
+              <li id="iconSection">
+                <ul>
+                  <li id="sortVideo">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1625218424/staging/Home/Images/BW_Explore_W_3x.png"
+                      alt=""
+                    />
+                  </li>
+                  <li id="searchFun" id="searchBtn">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="accountBtn">
+                    <img id="accountB"
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg"
+                      alt=""
+                    />
+        
+                    <ul style="display: none;" id="profile" class="profileDetails">
+                      <li id="userName"></li>
+                      <li>My Profile</li>
+                      <li>Refer & Earn</li>
+                      <li>WB Purse</li>
+                      <li>My Orders</li>
+                      <li>My Subscriptions</li>
+                      <li id="logout">Logout</li>
+                    </ul>
+                  </li>
+                  <li id="whatsappBtn">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="cartBtn">
+                    <i class="fa fa-shopping-bag" style="font-size: 20px"></i>
+                    <div id="cartCount">0</div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </div>
+</div>
+
+
+</div> -->
+
+
+    <div>
+
+  
+    <!-- the below div is for product images and product details like price rating pincode check -->
+
+    <div id="productDetailsDiv" class="productDetails">
+
+        <div id="productImageDiv">
+
+            <div id="next_product_imageDiv">
+                <img id="next_product_image"
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1618881636/staging/products/buying-options/Hair%20Pro-Growth%20Pack/New%20Carousel/Hair_Growth_Pack.jpg">
+                <div id="next_product_sub_image">
+                    <div id="next_product_sub_image1" class="next_sub_image">
+                        <img id="next_product_sub_image_1" class="next_image_sub">
+                    </div>
+                    <div id="next_product_sub_image2" class="next_sub_image">
+                        <img id="next_product_sub_image_2" class="next_image_sub">
+                    </div>
+                    <div id="next_product_sub_image3" class="next_sub_image">
+                        <img id="next_product_sub_image_3" class="next_image_sub">
+                    </div>
+                    <div id="next_product_sub_image4" class="next_sub_image">
+                        <img id="next_product_sub_image_4" class="next_image_sub">
+                    </div>
+                    <div id="next_product_sub_imagef3" class="next_sub_image">
+                        <img id="next_product_sub_image_5" class="next_image_sub">
+                    </div>
+                </div>
+            </div>
+            <p id="next_left_arrow">&larr;</p>
+            <p id="next_right_arr">&rarr;</p>
+
+        </div>
+
+
+        <!-- the below div is for product details like for price, ratings, items sold -->
+        <div id="completeProductDetails">
+
+            <h3 id="next_product_heading">100% Vegan Hair Vitamins for Women</h3>
+            <h3 id="next_product_name">Biotin Hair Gummies (30)</h3>
+            <span id="next_rupee_symbol"> &#8377; <span id="next_product_price">900</span> </span>
+            <br>
+            <p id="next_rating">4.5
+            <p id="next_star_rating">&starf;</p>
+            <p id="next_reviews">200</p>
+            <p id="next_reviews_head">Reviewed</p>
+            <p id="next_sold">1456</p>
+            <p id="next_product_sold">Units Sold</p>
+            </p>
+            <button id="addToCart_button">Add to Cart</button>
+            <button id="buynow_button">Buy now</button>
+            <h3 id="check_delivery_line">Check Delivery Date</h3>
+            <h3 id="enter_pincode_text">Enter pincode to check delivery date of your wellness regime.</h3>
+            <input id="next_pincode" id="number" placeholder="Enter Pincode">
+            <button id="next_pincode_submit">SUBMIT</button>
+            <div id="next_pincode_available">Your address is available to Delivery</div>
+        </div>
+
+    </div>
+
+    <!-- the below div is for Popular hair Regimes -->
+
+    <div id="next_popular_heading_div">
+
+        <h1 class="next_popular_heading">Popular</h1>
+        <h1 class="next_popular_heading">Hair</h1>
+        <h1 class="next_popular_heading">Regimes</h1>
+
+    </div>
+
+
+    <!-- the belwo div is for next_popular_div to display top 5 products -->
+
+    <div >
+
+    </div>
+
+
+    <!-- the below are how the product made and uses of the product -->
+
+    <div id="next_product_contentDiv">
+
+        <p id="next_content_1">100% Veg | Sugar Free | Gelatin Free</p>
+        <p> <span class="next_content_highlight">Strengthens & Thickens hair: </span> 5000 mcg Biotin promotes hair
+            growth and hair thickness by providing adequate
+            nutrients to your hair</p>
+        <p> <span class="next_content_highlight">Repairs hair tissue:</span> Zinc plays an important role in hair tissue
+            growth and repair. It ensures the proper
+            functioning of the oil glands around hair follicles. A zinc deficiency can lead to hair fall.</p>
+        <p> <span class="next_content_highlight">Nourishes hair:</span> These hair gummy supplements contain
+            multivitamins such as Vitamin A, Vitamin C & Vitamin E
+            that protect your hair from free-radical damage that blocks hair growth.
+        </p>
+
+        <p>Make your meals interesting with multivitamin hair supplements.</p>
+
+        <p> <span class="next_content_highlight">Suitable for:</span Hair fall, post-partum (post-pregnancy) hair loss,
+                hair growth & strengthening</p>
+        <p>With no added sugar, these biotin and multivitamin supplements are the best thing you could do for your hair!
+        </p>
+        <p>For best results, use for 3 months.</p>
+        <p>Eat 1 gummy daily after a meal.</p>
+        <p>Contains 90 pure vegetarian tasty gummies with no added sugar</p>
+
+
+    </div>
+
+    <!-- Powerful ingredients backed by science div -->
+
+    <div id="next_ingredientsDiv">
+
+        <p id="next_ingredients_head"> Powerful ingredients backed by science</p>
+        <div id="next_ingredient_boxDiv">
+
+            <div class="next_ingredients_boxDiv">
+
+                <h3 class="next_ingredients_text1">Biotin</h3>
+                <p class="next_ingredient_text2">Biotin is a crucial vitamin that has been known to help
+                    in hair growth.
+                </p>
+                <p class="next_ingredients_learnMore">Learn More</p>
+
+
+            </div>
+            <div class="next_ingredients_boxDiv">
+
+                <h3 class="next_ingredients_text1">Zinc & Multivitamins</h3>
+                <p class="next_ingredient_text2">Criticla for hair issue growth and repair</p>
+                <p class="next_ingredients_learnMore">Learn More</p>
+
+
+            </div>
+        </div>
+        <!-- the below are expansion slides which belongs products -->
+
+        <div id="next_expand_slide_Div">
+
+            <h3 id="next_expand_head1" class="next_expand_heading">Full list of ingredients</h3>
+            <!-- <h3 class="next_expand_downArrow">&#129095;</h3> -->
+            <div id="next_expand_hide1">
+
+                <div id="next_expand_slide1Div">
+
+                    <div class="next_expand_slide1_box">
+                        <p class="expand_slide_box_head">INGREDIENT NAMES</p>
+                        <P class="expand_slide_box_para">Chicory Root Extract, Pectin (440), Citric acid (E330),
+                            Natural Color(Red Beet powder), Natural flavors (Strawberry),
+                            Biotin, Vitamin C, Vitamin E,
+                            Vitamin A, Zinc (As Zinc Citrate dihydrate)</P>
+                    </div>
+    
+                    <div class="next_expand_slide1_box">
+                        <p class="expand_slide_box_head">FORMULATED WITHOUT:</p>
+                        <p class="expand_slide_box_para">Sugar, Gelatin, Gluten, Animal-derived ingredients, Artificial flavours, Preservatives</p>
+    
+                    </div>
+                </div>
+
+            </div>
+          
+
+            <h3 id="next_expand_head2" class="next_expand_heading">  Are these hair vitamins right for my hair type?</h3>
+            <!-- <h3 class="next_expand_downArrow">&#129095;</h3> -->
+            <div id="next_expand_hide2">
+
+                <div id="next_expand_slide2Div">
+                    <div class="next_expand_slide2_box">
+                        <p class="expand_slide_box_para">Bodywise's Hair Health Gummies are suitable for:<br>
+                            • All hair types</p>
+                    </div>
+                    <div class="next_expand_slide2_box">
+                        <p class="expand_slide_box_head">SHOULD YOU USE BODYWISE'S HAIR HEALTH GUMMY SUPPLEMENTS?</p>
+                        <p class="expand_slide_box_para">
+                            These Hair Health Gummy Supplements take care of:
+                            • Hair fall <br>
+    
+                            • Post-partum hair loss<br>
+                            • Hair growth<br>
+                            • Hair thickness<br>
+                            • Stronger hairA<br>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+           
+
+            <h3 id="next_expand_head3"  class="next_expand_heading">How to use</h3>
+            <!-- <h3 class="next_expand_downArrow">&#129095;</h3> -->
+            <div id="next_expand_slide3Div">
+                <p class="expand_slide_box_head">STEP 1</p>
+                <P class="expand_slide_box_para" >Eat 1 gummy daily after a meal</P>
+            </div>
+
+            <h3 id="next_expand_head4" class="next_expand_heading">Important Information</h3>
+            <!-- <h3 class="next_expand_downArrow">&#129095;</h3> -->
+            <div id="next_expand_slid34Div">
+                <p class="expand_slide_box_para"  >If you are pregnant or nursing, consult your healthcare
+                    professional before taking not just this biotin supplement,
+                    but any supplement. These hair health gummy supplements are
+                    part of your hair care regimen. Made with Biotin and
+                    multivitamins, it will strengthen your hair and ensure
+                    healthy hair growth. However, it is not an immediate solution
+                    and results may take up to 2-3 months to show.
+                    This hair supplement is effective when consumed daily.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- the below div is for Safe and Effective Hair Vitamins -->
+
+    <div id="safe_effective_main_div">
+   
+        <h2 id="safe_effective_heading">Safe and Effective Hair Vitamins</h2>
+        <p id="safe_effective_sub">Hair vitamins for healthy hair growth</d>
+        
+            <div id="safe_effective_image_mainDiv">
+
+                <div id="safe_effective_box1" class="safe_effective_box">
+
+                    <div class="safe_effective_smallBox">
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207025/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_100_Vegetarian_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                    <div class="safe_effective_smallBox">
+
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207024/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_No_Added_Sugar_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                    <div class="safe_effective_smallBox">
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207175/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_No_Preservatives_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                    <div class="safe_effective_smallBox">
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207025/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_No_Artificial_Colouring_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                    <div class="safe_effective_smallBox">
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207025/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_Gelatin_free_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                    <div class="safe_effective_smallBox">
+                        <img class="safe_effective_small_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1618207025/staging/products/hair-health-gummies/Safety%20Icons/BW_filled_icons_Gluten_free_copy_2.png">
+                        <p class="safe_effective_small_text">100% Vegetarian</p>
+                    </div>
+
+                </div>
+
+                <div id="safe_effective_box2" class="safe_effective_box">
+                    <img id="safe_effective_rightSide_img" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_600,c_limit/v1622538393/staging/products/hair-health-gummies/Carousel%20NEW/1000x1000_Review_-_5000mcg.png">
+                </div>
+            </div>
+
+    </div>
+
+
+
+    <!-- the below div is used for explore section -->
+
+    <div id="next_product_exploreMainDiv">
+ 
+        <div id="next_product_explore_div1">
+            <h3 id="next_product_explore_div1_head">Explore</h3>
+            <h4 id="next_product_explore_div1_sub">More about being bodyWise</h4>
+            <button id="next_product_explore_div1_viewAll">View All</button>
+        </div>
+
+        <div id="next_product_explore_div2">
+            <div id="next_product_explore_div2_sub">
+
+                <div class="next_product_explore_div2Image">
+                    <img class="next_product_explore_div2_imageUrl" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1627660992/staging/Home/Images/61005c6619033b0352099096.png">
+                </div>
+                <div class="next_product_explore_div2Image">
+                    <img class="next_product_explore_div2_imageUrl" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1627660992/staging/Home/Images/bebodywise.png">
+                </div>
+                <div class="next_product_explore_div2Image">
+                    <img class="next_product_explore_div2_imageUrl" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1627660992/staging/Home/Images/bebodywise2.png">
+                </div>
+                <div class="next_product_explore_div2Image">
+                    <img class="next_product_explore_div2_imageUrl" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_200,c_limit/v1627660993/staging/Home/Images/bebodywise3.png">
+                </div>
+
+            </div>
+           
+        </div>
+
+    </div>
+
+
+    <!-- the below section is for consumer study -->
+
+    <div id="consumer_study_mainDiv">
+
+        <div id="consumer_study_div1">
+
+            <h2 id="consumer_study_div1_head">Consumer Study</h2>
+            <h4 id="consumer_study_div1_sub">In a consumer study with 112 women who used the Hair Health Gummies for 12 weeks</h4>
+        </div>
+
+        <div id="consumer_study_div2">
+
+            <div class="consumer_study_div2_box">
+                <h2 class="consumer_study_div2_number">92</h2>
+                <h2 class="consumer_study_div2_per">%</h2>
+                <p class="consumer_study_div2_text">said their hair felt thicker and stronger</p>
+            </div>
+
+            <div class="consumer_study_div2_box">
+
+                <h2 class="consumer_study_div2_number">90</h2>
+                <h2 class="consumer_study_div2_per">%</h2>
+                <p class="consumer_study_div2_text">said their hair felt more nourished and healthier</p>
+
+            </div>
+
+            <div class="consumer_study_div2_box">
+
+                <h2 class="consumer_study_div2_number">81</h2>
+                <h2 class="consumer_study_div2_per">%</h2>
+                <p class="consumer_study_div2_text">said they had seen reduced hair fall</p>
+                
+            </div>
+
+            <div class="consumer_study_div2_box">
+
+                <h2 class="consumer_study_div2_number">92</h2>
+                <h2 class="consumer_study_div2_per">%</h2>
+                <p class="consumer_study_div2_text">said they were more regular in taking their supplements</p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- the below section is for Doctors Notes section of products -->
+
+    <div id="doctors_notes_mainDiv">
+
+        <h2 id="doctors_notes_heading">Doctor's Notes</h2>
+
+        <div id="doctors_notes_doctorsDiv">
+
+           <div  class="doctors_notes_doctorsBox">
+
+               <div class="doctors_notes_doctorsBox_imageDiv">
+                   <img class="doctors_notes_doctorsBox_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1613128560/staging/doctors/Sharmatha_short.png">
+               </div>
+
+               <div class="doctors_notes_doctorsBox_text">
+                   <h3 class="doctors_notes_doctorsBox_text_name">Dr. Sharmatha Kumar</h3>
+                   <h4 class="doctors_notes_doctorsBox_text_text">
+                    Biotin, also known as vitamin B7, stimulates keratin production in hair and can increase the rate of follicle growth. Additionally, eating enough key hair growth vitamins can help prevent hair loss in women.</h4>
+               </div>
+               
+           </div>
+
+           <div  class="doctors_notes_doctorsBox">
+
+            <div class="doctors_notes_doctorsBox_imageDiv">
+                <img class="doctors_notes_doctorsBox_image" src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1601900469/Dr.Shobita_NEW_headshot.png">
+            </div>
+
+            <div class="doctors_notes_doctorsBox_text">
+                <h3 class="doctors_notes_doctorsBox_text_name">Dr. Shobhita Anand</h3>
+                <h4 class="doctors_notes_doctorsBox_text_text">
+                    Biotin is a crucial vitamin that keeps skin and hair healthy and functioning normally. Zinc plays an important role in hair tissue growth & repair, keeping the oil glands around the follicles working properly</h4>
+            </div>
+
+           </div>
+
+       </div>
+
+
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <!-- font Awesome  -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+    
+        <!-- google font icon link -->
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+    
+        <link
+          href="//db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium"
+          rel="stylesheet"
+          type="text/css"
+        />
+
+
+        <script
+      src="https://kit.fontawesome.com/4c2ed180e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    
+        <!-- font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro&display=swap"
+          rel="stylesheet"
+        />
+    
+        <!-- main style css link -->
+        <link rel="stylesheet" href="style/main-style.css" />
+        <link rel="stylesheet" href="style/temp-style.css" />
+        <link rel="stylesheet" href="style/bh-css.css">
+        <link rel="stylesheet" href="style/footer.css">
+        <link rel="stylesheet" href="style/orderPlaced.css">
+        <link rel="stylesheet" href="style/productDetails.css">
+        <link rel="stylesheet" href="style/txt.css" />
+<link rel="stylesheet" href="style/txt2.css" />
+    
+        <title></title>
+      </head>
+<body>
+    <div id="body-container">
+      <div id="main-container">
+        <div id="navbar">
+            <ul>
+              <li id="logo">
+                <img
+                  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png"
+                  alt=""
+                />
+              </li>
+              <li>Book Doctor Consultation</li>
+              <li>Take Wellness Assessment</li>
+              <li id="dropDownBtn">
+                <span>
+                  Choose Concern<span class="material-icons">
+                    keyboard_arrow_down
+                  </span>
+                </span>
+                <ul id="dropDownMenu">
+                  <li>Hair</li>
+                  <li>Skin</li>
+                  <li>Nutrition</li>
+                  <li>PCOS</li>
+                  <li>Intimate Care</li>
+                </ul>
+              </li>
+              <li>All Products</li>
+              <li>Refer & Earn</li>
+              <li id="iconSection">
+                <ul>
+                  <li id="sortVideo">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1625218424/staging/Home/Images/BW_Explore_W_3x.png"
+                      alt=""
+                    />
+                  </li>
+                  <li id="searchFun" id="searchBtn">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="accountBtn">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg"
+                      alt=""
+                    />
+        
+                    <ul id="profile" class="profileDetails">
+                      <li id="userName"></li>
+                      <li>My Profile</li>
+                      <li>Refer & Earn</li>
+                      <li>WB Purse</li>
+                      <li>My Orders</li>
+                      <li>My Subscriptions</li>
+                      <li id="logout">Logout</li>
+                    </ul>
+                  </li>
+                  <li id="whatsappBtn">
+                    <img
+                      src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg"
+                      alt=""
+                    />
+                  </li>
+                  <li id="cartBtn">
+                    <i class="fa fa-shopping-bag" style="font-size: 20px"></i>
+                    <div id="cartCount">0</div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    </div>
+
+
+    <div id="pay-div" style="margin-top: 100px; top: 0px;">
+        <div class="sub-pay">
+          <div id="ordr-sum" style="display: block">
+            <div onclick="helloGuys()" style="display: flex" id="ordr-sumr">
+              <div id="nmbr"><h1 id="dsp">1</h1></div>
+              <div id="Cont">
+                <h2>Order Summary</h2>
+                <h3 id="grey">1 items for ₹899</h3>
+              </div>
+              <i
+                id="rotate"
+                style="display: flex"
+                class="fas fa-chevron-circle-down"
+              ></i>
+            </div>
+            <div id="downy" class="down">
+              <div id="prd-drpdwn">
+                <div id="prd-img">
+                  <img
+                    id="pd-img"
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1621853749/staging/products/Hair%20Growth%20Concentrate/Carousel%20NEW/1000x750.jpg"
+                    alt=""
+                  />
+                </div>
+                <div id="cnt-txt">
+                  <h2 class="sh1">Hair Growth Serum</h2>
+                  <div class="sh2" style="display: flex">
+                    <h3 id="hd-1">
+                      ₹799
+                      <h5 id="gry"><span id="cut">899 </span> 11% off</h5>
+                    </h3>
+                  </div>
+                </div>
+                <div id="cntr-btn">
+                  <button class="btn-dwn">-</button>
+                  <h3 id="btn-cntr" class="btn-dwn">1</h3>
+                  <button class="btn-dwn">+</button>
+                </div>
+              </div>
+  
+              <button id="slc-adr-btn">Select Adress</button>
+            </div>
+          </div>
+  
+          <!-- Adreess -->
+          <div id="Adres">
+            <div class="bg-clr" style="display: block">
+              <div onclick="helloGuys2()" style="display: flex" id="ordr-sumr">
+                <div id="nmbr"><h1 id="dspu">2</h1></div>
+                <div id="Cont">
+                  <h2>Address</h2>
+                  <h3 id="grey">Add Delivery Address</h3>
+                </div>
+                <i
+                  id="rotate1"
+                  style="display: flex"
+                  class="fas fa-chevron-circle-down"
+                ></i>
+              </div>
+              <div id="downy2" class="down2">
+                <div id="cont-adr" class="container">
+                  <div id="first-bx" class="mrgn-tp">
+                    <div id="inpt-div" style="display: flex">
+                      <input
+                        type="radio"
+                        id="html"
+                        name="fav_language"
+                        value="HTML"
+                      />
+                      <label class="adr-input" for="html"
+                        >YAMUNANAGAR, Yamuna Nagar, Haryana, IN, 135001</label
+                      ><br />
+                    </div>
+  
+                    <div id="edt-dv"><h4 id="edt">Edit</h4></div>
+                  </div>
+                  <div id="first-bx-ad-nw" style="display: flex">
+                    <div id="ad-nw-adr" style="display: flex">
+                      <input
+                        type="radio"
+                        id="html1"
+                        name="fav_language"
+                        value="HTML"
+                      />
+                      <label class="adr-input1" for="html">Add New Address</label
+                      ><br />
+                    </div>
+                  </div>
+                  <button id="slc-adr-btn">Proceed To Payment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- PAYMENT -->
+  
+          <div id="Payment">
+            <div id="ordr-sum" style="display: block">
+              <div onclick="helloGuys3()" style="display: flex" id="ordr-sumr">
+                <div id="nmbr"><h1 id="dspu">3</h1></div>
+                <div id="Cont">
+                  <h2>Payment</h2>
+                  <h3 id="grey">Choose Mode of Payment</h3>
+                </div>
+                <i
+                  id="rotate3"
+                  style="display: flex"
+                  class="fas fa-chevron-circle-down"
+                ></i>
+              </div>
+              <div id="downy3" class="down3">
+                <div class="container">
+                  <div id="first-bx" class="round">
+                    <div class="pay-hd">
+                      <h3>Pay via UPi</h3>
+                      <p class="grn">Get 20% Cashback in BW Purse</p>
+                    </div>
+  
+                    <div>
+                      <div id="Paytm" style="display: flex">
+                        <img
+                          id="pay-tm"
+                          src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1609149871/staging/app/payment/phone-pe.png"
+                          alt=""
+                        />
+                        <p style="width: 70%">
+                          Pay via PhonePe, Paytm or Other UPI
+                        </p>
+                        <i
+                          id="rotate4"
+                          style="display: flex"
+                          onclick="Paytmddwn()"
+                          class="fas fa-chevron-circle-down"
+                        ></i>
+                      </div>
+  
+                      <div class="paytm-dwn" id="Paytm-dwn">
+                        <p>⭐ Get 20% Cashback in BW purse on order delivery</p>
+                        <p>
+                          Pay securely using your favourite UPI app through
+                          GoKwik.
+                        </p>
+                        <div id="btn-dv">
+                          <button class="btn-mn" id="btn-mn">Pay ₹799.0</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- PAY VIA UPI ENDS HERE -->
+  
+                  <div id="first-bx" class="round">
+                    <div class="pay-hd">
+                      <h3>Pay via Credit/Debit card/Net Banking</h3>
+                      <p class="grn">Get 20% Cashback in BW Purse</p>
+                    </div>
+  
+                    <div>
+                      <div id="Paytm" style="display: flex">
+                        <img
+                          id="pay-tm"
+                          src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1617947532/payment-options/Card_BW.png"
+                          alt=""
+                        />
+                        <p style="width: 70%">Credit / Debit Card (20% CB)</p>
+                        <i
+                          id="rotate5"
+                          style="display: flex"
+                          onclick="Paytmddwn1()"
+                          class="fas fa-chevron-circle-down"
+                        ></i>
+                      </div>
+  
+                      <div class="paytm-dw dw1" id="Paytm-dn1">
+                        <p class="grn">
+                          ⭐ Get 20% Cashback in BW purse on order delivery
+                        </p>
+  
+                        <div id="Card-details">
+                          <div id="ad-crd-flx" style="display: flex">
+                            <input
+                              id="rdo"
+                              type="radio"
+                              name="fav_language"
+                              value="HTML"
+                            />
+                            <p>Add New Card</p>
+                          </div>
+  
+                          <!-- <label  for="html"></label><br> -->
+  
+                          <p>Card Number</p>
+                          <input
+                            type="number"
+                            placeholder="4000 3000 2000 1000"
+                          />
+                          <p>Name</p>
+                          <input type="text" placeholder="Name On Card" />
+                          <div>
+                            <div
+                              class="expr-cvv"
+                              style="display: flex; width: 200px"
+                            >
+                              <p class="inpt" style="flex: 1">Expiry</p>
+                              <p class="inpt" style="flex: 1">CVV</p>
+                            </div>
+                            <div
+                              class="expr-cvv"
+                              style="display: flex; width: 200px"
+                            >
+                              <input class="inpt" type="text" name="" id="" />
+                              <input class="inpt" type="text" name="" id="" />
+                            </div>
+                            <div id="ad-crd-flx" style="display: flex">
+                              <input
+                                id="rdo"
+                                type="radio"
+                                name="fav_language"
+                                value="HTML"
+                              />
+                              <p>Save card securely for future use</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="btn-dv">
+                          <button class="btn-mn" id="btn-mn1">Pay ₹799.0</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Credit / Debit Card (20% CB) ENDS HERE -->
+  
+                  <div id="first-bx" class="round">
+                    <div>
+                      <div id="Paytm" style="display: flex">
+                        <img
+                          id="pay-tm"
+                          src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1617947498/payment-options/Net_Banking_BW.png"
+                          alt=""
+                        />
+                        <p style="width: 70%">Net Banking (20% CB)</p>
+                        <i
+                          id="rotate6"
+                          style="display: flex"
+                          onclick="Paytmddwn2()"
+                          class="fas fa-chevron-circle-down"
+                        ></i>
+                      </div>
+  
+                      <div class="paytm-dw" id="Paytm-dn2">
+                        <p class="grn">
+                          ⭐ Get 20% Cashback in BW purse on order delivery
+                        </p>
+                        <div style="display: flex">
+                          <div id="bnk-dtls" style="display: flex">
+                            <div class="div-img-bnk">
+                              <img
+                                class="img-bnk"
+                                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603901284/staging/app/payment/sbi.png"
+                                alt=""
+                              />
+                              <p class="bn-nm">SBI</p>
+                            </div>
+                            <div class="div-img-bnk">
+                              <img
+                                class="img-bnk"
+                                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603901283/staging/app/payment/axis.png"
+                                alt=""
+                              />
+                              <p class="bn-nm">AXIS</p>
+                            </div>
+                            <div class="div-img-bnk">
+                              <img
+                                class="img-bnk"
+                                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603901283/staging/app/payment/hdfc.png"
+                                alt=""
+                              />
+                              <p class="bn-nm">HDFC</p>
+                            </div>
+                            <div class="div-img-bnk">
+                              <img
+                                class="img-bnk"
+                                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603901284/staging/app/payment/kotak.png"
+                                alt=""
+                              />
+                              <p class="bn-nm">KOTAK</p>
+                            </div>
+  
+                            <div class="div-img-bnk">
+                              <img
+                                class="img-bnk"
+                                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603901284/staging/app/payment/icici.png"
+                                alt=""
+                              />
+                              <p class="bn-nm">ICICI</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <select name="select" id="slct">
+                          Select
+                          <option value="">Select</option>
+                          <option value="">Choose</option>
+                          <option value="">SBI</option>
+                          <option value="">KOTAK</option>
+                          <option value="">PNB</option>
+                          <option value="">IDBI</option>
+                          <option value="">BOI</option>
+                          <option value="">HDFC</option>
+                          <option value="">ICIC</option>
+                          <option value="">FEDERAL BANK</option>
+                          
+                        </select>
+  
+                        <div id="btn-dv">
+                          <button class="btn-mn" id="btn-mn2">Pay ₹799.0</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- Net Banking (20% CB) ENDS HERE -->
+  
+                  <div id="wallet">
+                    <!-- Phonepe -->
+  
+                    <div id="first-bx" class="round">
+                      <div id="Cont-Wallet">
+                        <h3>Wallet</h3>
+                        <p class="grn">Get 20% Cashback in BW Purse</p>
+                      </div>
+  
+                      <div>
+                        <div id="Paytm" style="display: flex">
+                          <img
+                            id="pay-tm"
+                            src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1609149871/staging/app/payment/phone-pe.png"
+                            alt=""
+                          />
+                          <p style="width: 70%">PhonePe</p>
+                          <i
+                            id="rotate7"
+                            style="display: flex"
+                            onclick="Paytmddwn3()"
+                            class="fas fa-chevron-circle-down"
+                          ></i>
+                        </div>
+  
+                        <div class="paytm-dw5 dn5" id="Paytm-dn4">
+                          <div class="bg-clr-dwn">
+                            <p class="pdwn">
+                              ⭐ Get 20% Cashback in BW purse on order delivery
+                            </p>
+                          </div>
+  
+                          <div id="btn-dv">
+                            <button class="btn-mn" id="btn-mn3">Pay ₹799.0</button>
+                          </div>
+                        </div>
+  
+                        <!-- Payzapp -->
+  
+                        <div id="Paytm" style="display: flex">
+                          <img
+                            id="pay-tm"
+                            src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1609149679/staging/app/payment/payzapp.png"
+                            alt=""
+                          />
+                          <p style="width: 70%">PayZapp</p>
+                          <i
+                            id="rotate8"
+                            style="display: flex"
+                            onclick="Paytmddwn4()"
+                            class="fas fa-chevron-circle-down"
+                          ></i>
+                        </div>
+  
+                        <div class="paytm-dw6 dn5" id="Paytm-dn5">
+                          <div class="bg-clr-dwn">
+                            <p class="pdwn">
+                              ⭐ Get 20% Cashback in BW purse on order delivery
+                            </p>
+                          </div>
+  
+                          <div id="btn-dv">
+                            <button class="btn-mn" id="btn-mn4">Pay ₹799.0</button>
+                          </div>
+                        </div>
+  
+                        <div id="Paytm" style="display: flex">
+                          <img
+                            id="pay-tm"
+                            src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603899520/staging/app/payment/mobikwik.png"
+                            alt=""
+                          />
+                          <p style="width: 70%">Freecharge</p>
+                          <i
+                            id="rotate9"
+                            style="display: flex"
+                            onclick="Paytmddwn5()"
+                            class="fas fa-chevron-circle-down"
+                          ></i>
+                        </div>
+  
+                        <div class="paytm-dw7 dn5" id="Paytm-dn6">
+                          <div class="bg-clr-dwn">
+                            <p class="grn">
+                              ⭐ Get 20% Cashback in BW purse on order delivery
+                            </p>
+                          </div>
+  
+                          <div id="btn-dv">
+                            <button class="btn-mn" id="btn-mn5">Pay ₹799.0</button>
+                          </div>
+                        </div>
+  
+                        <div id="Paytm" style="display: flex">
+                          <img
+                            id="pay-tm"
+                            src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1603899518/staging/app/payment/freecharge.png"
+                            alt=""
+                          />
+                          <p style="width: 70%">PhonePe</p>
+                          <i
+                            id="rotate10"
+                            style="display: flex"
+                            onclick="Paytmddwn6()"
+                            class="fas fa-chevron-circle-down"
+                          ></i>
+                        </div>
+  
+                        <div class="paytm-dw8 dn5" id="Paytm-dn7">
+                          <div class="bg-clr-dwn">
+                            <p class="grn">
+                              ⭐ Get 20% Cashback in BW purse on order delivery
+                            </p>
+                          </div>
+  
+                          <div id="btn-dv">
+                            <button class="btn-mn" id="btn-mn6">Pay ₹799.0</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- BUY NOW PLAY LATER -->
+  
+                  <div id="first-bx" class="round">
+                    <div class="dn6">
+                      <h3>Buy Now Pay Later</h3>
+                    </div>
+  
+                    <div id="Paytm" style="display: flex">
+                      <img
+                        id="pay-tm"
+                        src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1637331670/staging/app/payment/zest_money.png"
+                        alt=""
+                      />
+                      <p style="width: 70%">ZestMoney</p>
+                      <i
+                        id="rotate11"
+                        style="display: flex"
+                        onclick="Paytmddwn7()"
+                        class="fas fa-chevron-circle-down"
+                      ></i>
+                    </div>
+  
+                    <div class="paytm-dw9 dn8" id="Paytm-dn8">
+                      <div>
+                        <p class="grn1">
+                          ⭐ Get 20% Cashback in BW purse on order delivery Enter
+                          your number associated to ZestMoney
+                        </p>
+                        <input type="number" name="" id="MNB" />
+                      </div>
+  
+                      <div id="btn-dv">
+                        <button class="btn-mn" id="btn-mn7">Pay ₹799.0</button>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <!-- <button id="slc-adr-btn">Select Adress</button> -->
+  
+                  <div id="first-bx" class="round">
+                    <div class="dn6">
+                      <h3>Pay on Delivery</h3>
+                    </div>
+  
+                    <div id="Paytm" style="display: flex">
+                      <img
+                        id="pay-tm"
+                        src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1617280024/payment-options/Ellipse_71GOKWIK.png"
+                        alt=""
+                      />
+                      <p style="width: 70%">Cash On Delivery</p>
+                      <i
+                        id="rotate12"
+                        style="display: flex"
+                        onclick="Paytmddwn8()"
+                        class="fas fa-chevron-circle-down"
+                      ></i>
+                    </div>
+  
+                    <div class="paytm-dw10 dn9" id="Paytm-dn9">
+                      <div id="btn-dv">
+                        <button class="btn-mn" id="btn-mn8">Pay ₹799.0</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- SIDE BOXES  -->
+  
+        <div class="sub-pay2">
+          <div id="final-scrl">
+            <div class="side-bx">
+              <div onclick="Sidebox1()" id="apl-dsc" style="display: flex">
+                <h3 class="h3-sd-bx">Apply Discount</h3>
+                <i
+                  id="rtat1"
+                  style="display: flex"
+                  class="fas fa-chevron-circle-down"
+                ></i>
+              </div>
+  
+              <div class="HD-CN" id="mn-dv-hd">
+                <p class="grn3">
+                  Get 20% cashback in your BW Purse on order delivery
+                </p>
+                <div id="first-bx" class="round">
+                  <div style="display: flex">
+                    <input id="inpt-cpn" type="radio" name="" id="" />
+                    <p class="pr-in-cp">Use Coupon Code</p>
+                    <i
+                      id="rtat2"
+                      style="display: flex"
+                      onclick="Sidebox2()"
+                      class="fas fa-chevron-circle-down"
+                    ></i>
+                  </div>
+                </div>
+  
+                <div id="hd-cn" class="Hide-cont" class="inpt-div">
+                  <input id="CPN-CODE" type="text" placeholder="" />
+                  <button id="cpn-btn">APPLY</button>
+                </div>
+                <hr style="border-top: 1px dashed grey" />
+  
+                <div class="rfr-cd">
+                  <div class="rfr-cd-sb" style="display: flex">
+                    <p class="rfr-para">Have a Referral Code?</p>
+                    <i
+                      id="rtat3"
+                      style="display: flex"
+                      onclick="Sidebox3()"
+                      class="fas fa-chevron-circle-down"
+                    ></i>
+                  </div>
+  
+                  <div id="hd-cn2" class="Hide-cont1">
+                    <input
+                      id="CPN-CODE2"
+                      type="text"
+                      placeholder="Enter referal"
+                    />
+                    <button id="cpn-btn2">Redeem</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="side-bx">
+              <div class="billing">
+                <div class="sd-bx">
+                  <h2>Bill Details</h2>
+                </div>
+  
+                <div style="display: flex">
+                  <p style="flex: 1">Subtotal</p>
+                  <p id="subTotalMrp" style="flex: 1">₹899.0</p>
+                </div>
+  
+                <div style="display: flex">
+                  <p class="grn" style="flex: 1">Discount</p>
+                  <p id="discountID" class="grn" style="flex: 1">-₹100.0</p>
+                </div>
+  
+                <div style="display: flex">
+                  <p class="grn" style="flex: 1">Shipping</p>
+                  <p class="grn" style="flex: 1">Free!</p>
+                </div>
+  
+                <div style="display: flex">
+                  <p style="flex: 1">To Pay</p>
+                  <p id="priceId" style="flex: 1; font-weight: bold">₹799.0</p>
+                </div>
+  
+                <div class="ttl-sv" style="display: flex">
+                  <p style="flex: 1">Total Savings</p>
+                  <p id="totalSavingId" style="flex: 1">₹100.0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+</div>
+
+<!-- account section -->
+    <div id="accountPage">
+        <div id="accountBackground"></div>
+
+    <div id="signupLoginBox">
+      <div id="signupBox">
+        <div class="closeDiv">
+          <div>Login or Signup</div>
+          <div class="material-icons closeBtn">close</div>
+        </div>
+        <p>Enter your phone number to verify yourself</p>
+        <input
+          id="enterNumber"
+          type="number"
+          placeholder="Enter Phone Number"
+        />
+        <p id="showMsg"></p>
+        <p>We will send OTP to this number</p>
+
+        <button id="submitBtn1">SUBMIT</button>
+      </div>
+
+      <div id="inputBox">
+        <div class="closeDiv">
+          <div>Signup</div>
+          <div class="material-icons closeBtn2">close</div>
+        </div>
+        <input id="firstName" type="text" placeholder="First Name" />
+        <p id="showFirst"></p>
+        <input id="lastName" type="text" placeholder="Last Name" />
+        <input id="emailId" type="email" placeholder="Email Id" />
+        <p id="showEmail"></p>
+
+        <button id="submitBtn2">SUBMIT</button>
+      </div>
+
+      <div id="otpBox">
+        <div class="closeDiv">
+          <div>Signup</div>
+          <div class="material-icons closeBtn3">close</div>
+        </div>
+        <p>We've sent an OTP on your number,</p>
+        <input
+          id="enterOtp"
+          type="number"
+          placeholder="Enter OTP"
+        />
+
+        <p id="otpCheck"></p>
+
+        <button id="submitBtn3">Not received OTP? Resend</button>
+      </div>
+    </div>
+    </div>
+
+
+    <!-- search section -->
+    <div id="searchSection">
+        <div id="darkBackground"></div>
+    <div id="searchBar">
+      <div id="searchInput">
+        <input type="text" placeholder="Search here..." />
+        <span>
+          <img
+            src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1622088832/staging/Home/Images/Vector.png"
+            alt=""
+          />
+        </span>
+        <span id="searchCloseBtn" class="material-icons">close</span>
+      </div>
+
+      <div id="trendingPart">
+        <div style="display: flex">
+          <span class="material-icons"> trending_up </span>
+          <h4>Trending</h4>
+        </div>
+        <div class="trending">
+          <span class="">Open Pores</span>
+          <span class="">Acne / Pimple</span><span class="">PCOS</span
+          ><span class="">Pigmentation / Uneven skin tone</span
+          ><span class="">Hair fall &amp; hair thinning</span
+          ><span class="">Weight management</span
+          ><span class="">Vaginal infections</span>
+        </div>
+    </div>
+
+
+    <!-- cart slider section -->
+    <div id="cartSlider"><div id="cartBackground"></div>
+    <div id="cartSliderDiv">
+      <div id="cartTop">
+        <div>
+          <i
+            id="backBtn"
+            class="fa fa-arrow-right"
+            style="font-size: 20px"
+          ></i>
+        </div>
+        <div style="font-size: 20px">Cart</div>
+      </div>
+      <div id="cartMid">
+        <div id="cartItem">
+          <div>
+            <img
+              src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1620122159/staging/Home/Images/image_13.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3>Your Personal Health Briefcase is empty!</h3>
+            <p>Add products to cart and begin your wellness journey now</p>
+          </div>
+          <div style="width: 100%">
+            <button id="backBtn2">Add Products</button>
+          </div>
+        </div>
+
+        <div id="cartItemMid">
+          <div id="countItem">
+            <div>
+              <p>Items</p>
+              <h4 id="noOfItem"></h4>
+            </div>
+            <div>
+              <p>Total</p>
+              <h4 id="tAmount"></h4>
+            </div>
+            <div style="color: rgb(55, 159, 142)">
+              <p>Savings</p>
+              <h4 id="sAmount"></h4>
+            </div>
+            <div></div>
+          </div>
+          <div id="cartItemList"></div>
+          <div id="billDetails">
+            <h4>Bill Details</h4>
+            <div>
+              <p>Subtotal</p>
+              <p id="currAmount"></p>
+            </div>
+            <div id="discount">
+              <p>Discount</p>
+              <p id="disAmount"></p>
+            </div>
+            <div id="ship">
+              <p>Shipping</p>
+              <p>Free!</p>
+            </div>
+            <div id="toPay">
+              <p>To Pay</p>
+              <p id="totalPay"></p>
+            </div>
+            <div id="save">
+              <p>Total Savings</p>
+              <p id="saveAmount"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="cartBottom"></div>
+    </div>
+</div>
+
+
+    <!-- footer section -->
+    <div id="footerDiv">
+        <div class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="top-footer">
+                        <div>
+                            <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png" alt="BeBodyWise" width="141px">
+                        </div>
+                        <ul>
+                            <li>
+                                <p>Hair</p>
+                            </li>
+                            <li>
+                                <p>Skin</p>
+                            </li>
+                            <li>
+                                <p>Nutrition</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>PCOS</p>
+                            </li>
+                            <li>
+                                <p>Intimate Care</p>
+                            </li>
+                            <li>
+                                <p>Blog</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mid-footer">
+                        <ul>
+                            <li>
+                                <p>Contact Us</p>
+                            </li>
+                            <li>
+                                <p>About Us</p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <p>FAQs</p>
+                            </li>
+                            <li>
+                                <p>Returns & Refunds</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-footer">
+                        <div class="social-media-footer">
+                            <ul>
+                                <li>
+                                    <p>
+                                        <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/insta.png" alt="">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/fb.png" alt="">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <img src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/youtube.png" alt="">
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="bottom-footer-text-links">
+                            <li>
+                                <p>Privacy Policy</p>
+                            </li>
+                            <li>
+                                <p>Join Community</p>
+                            </li>
+                        </ul>
+                        <p>
+                            Copyright © 
+                            2021
+                             BeBodyWise. All rights reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="onetwo">
+
+</div>
+
+</body>
+</html>
+
+
+
+<script type="module">
+
+let cartData=JSON.parse(localStorage.getItem("cartData"))
+console.log(cartData);
+
+let Mrp=0;
+let Price=0;
+for(let i=0; i<cartData.length; i++){
+  Mrp=Mrp+cartData[i].mrp;
+  Price=Price+cartData[i].price;
+
+}
+// subTotalMrp
+document.getElementById("subTotalMrp").innerText="₹"+Mrp;
+document.getElementById("priceId").innerText="₹"+Price;
+let desco=Mrp-Price;
+console.log(desco)
+document.getElementById("discountID").innerText="₹"+ desco;
+
+
+document.getElementById("btn-mn1").innerText="₹"+Price;
+document.getElementById("btn-mn2").innerText="₹"+Price;
+document.getElementById("btn-mn3").innerText="₹"+Price;
+document.getElementById("btn-mn4").innerText="₹"+Price;
+document.getElementById("btn-mn5").innerText="₹"+Price;
+document.getElementById("btn-mn6").innerText="₹"+Price;
+document.getElementById("btn-mn7").innerText="₹"+Price;
+
+let cod=document.getElementById("btn-mn8");
+cod.innerText="Pay "+"₹"+Price;
+
+document.getElementById("totalSavingId").innerText="₹"+desco;
+document.getElementById("grey").innerText="₹"+Mrp;
+
+
+cod.addEventListener("click",function(){
+  window.location.href="wlcm.html"
+});
+
+
+</script>
+<script src="script/main-script.js"></script>
+<script src="script/orderPlaced.js"></script>
+<script src="script/productDetails.js"></script>
+<script src="script/togle.js"></script>

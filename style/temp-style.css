@@ -1,0 +1,175 @@
+#flx {
+    display: flex;
+
+    height: 250px;
+    width: 90%;
+    background-color: #f6f6f6;
+  }
+  #rfr {
+    flex: 1;
+  }
+  #rfr-img {
+    flex: 1;
+  }
+  #rfr-btn {
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+  }
+  #hd {
+    font-family: "Open Sans", sans-serif;
+  }
+  #shd {
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+  }
+  #rfr-src {
+    margin-left: 2%;
+  }
+
+  #dlvr-insc {
+    display: flex;
+    /* border: 1px solid black; */
+    width: 90%;
+    height: 120px;
+  }
+  #dlvr-cod,
+  #dlvr-csbc {
+    flex: 1;
+    display: flex;
+    /* border: 1px red solid; */
+    margin-right: 2%;
+    border-radius: 14px;
+  }
+  #dlvr-cod {
+    background-color: #eff;
+  }
+  #dlvr-csbc {
+    flex: 1;
+    /* border: 1px solid green; */
+    border-radius: 14px;
+    background-color: #fceced;
+  }
+  #pr-cod {
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  #cod-img,
+  #csbc-img {
+    width: 20%;
+    height: 40%;
+    margin-top: 8%;
+    margin-right: 5%;
+  }
+  #pr-cod {
+    font-family: "Open Sans", sans-serif;
+    color: #707594;
+    font-size: 17px;
+  }
+  .dlvr-hd {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  /* payment grid */
+
+  #pay-grd {
+    display: flex;
+    /* border: 1px solid red; */
+    height: 150px;
+    width: 90%;
+  }
+  .pay-img {
+    flex: 1;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 250px;
+    height: 120px;
+  }
+  .pay-img-cls {
+    margin-top: 22%;
+    margin-left: 16%;
+  }
+
+  /* last black part styling */
+
+  #last-blc {
+    width: 100%;
+    border: 1px solid red;
+    background-color: black;
+    height: 550px;
+  }
+  #last-logo {
+    width: 20%;
+    height: 6%;
+    margin-top: 2%;
+    margin-left: 40%;
+  }
+  #last-blc-content {
+    /* border: 1px solid white; */
+    width: 60%;
+    height: 90%;
+    margin: auto;
+  }
+
+  #first-br {
+    display: flex;
+    color: white;
+    /* border: 1px solid white; */
+    width: 60%;
+    margin: auto;
+    text-align: center;
+  }
+  #first-br3 {
+    display: flex;
+    color: white;
+    /* border: 1px solid white; */
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-left: 24%;
+  }
+
+  .navy {
+    font-size: 38px;
+    margin-left: 13px;
+  }
+  .a-tag-navy {
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  .a-tag-navy:hover {
+    color: grey;
+    text-decoration: none;
+  }
+  #nav-list-one {
+    margin-left: 20%;
+    margin-top: -5%;
+  }
+  #nav-list-two {
+    margin-left: 15%;
+    margin-top: -5%;
+  }
+  #nav-list-four {
+    margin-left: 25%;
+  }
+  #nav-list-five {
+    margin-left: 17%;
+    margin-top: -5%;
+  }
+  #lst-p {
+    font-family: "Open Sans", sans-serif;
+    color: gray;
+    margin-left: 25%;
+    font-size: 18px;
+  }
+  #mn-div {
+    margin-left: 14%;
+  }

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- google font icon link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      href="//db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir+Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main style css link -->
+    <link rel="stylesheet" href="style/main-style.css" />
+    <link rel="stylesheet" href="style/temp-style.css" />
+    <link rel="stylesheet" href="style/pro-style.css">
+
+    <title>Home</title>
+  </head>
+  <body>
+    <div id="body-container">
+      <div id="main-container">
+        <div id="navbar">
+          <ul>
+            <li id="logo">
+              <img
+                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png"
+                alt=""
+              />
+            </li>
+            <li>Book Doctor Consultation</li>
+            <li>Take Wellness Assessment</li>
+            <li id="dropDownBtn">
+              <span>
+                Choose Concern<span class="material-icons">
+                  keyboard_arrow_down
+                </span>
+              </span>
+              <ul id="dropDownMenu">
+                <li>Hair</li>
+                <li>Skin</li>
+                <li>Nutrition</li>
+                <li>PCOS</li>
+                <li>Intimate Care</li>
+              </ul>
+            </li>
+            <li>All Products</li>
+            <li>Refer & Earn</li>
+            <li id="iconSection">
+              <ul>
+                <li id="sortVideo">
+                  <img
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1625218424/staging/Home/Images/BW_Explore_W_3x.png"
+                    alt=""
+                  />
+                </li>
+                <li onclick="searchFun()" id="searchBtn">
+                  <img
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_search.svg"
+                    alt=""
+                  />
+                </li>
+                <li id="accountBtn">
+                  <img
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/u_user.svg"
+                    alt=""
+                  />
+
+                  <ul id="profile" class="profileDetails">
+                    <li id="userName"></li>
+                    <li>My Profile</li>
+                    <li>Refer & Earn</li>
+                    <li>WB Purse</li>
+                    <li>My Orders</li>
+                    <li>My Subscriptions</li>
+                    <li id="logout">Logout</li>
+                  </ul>
+                </li>
+                <li id="whatsappBtn">
+                  <img
+                    src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_48/v1603950724/staging/Home/Images/WhastApp.svg"
+                    alt=""
+                  />
+                </li>
+                <li id="cartBtn">
+                  <i class="fa fa-shopping-bag" style="font-size: 20px"></i>
+                  <div id="cartCount">0</div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div id="productSingle">
+        <div id="topPro">
+            <div id="imgPro">
+                <div id="bigImg"></div>
+                <div id="smallImg"></div>
+            </div>
+            <div id="detailPro">
+                <div id="for"></div>
+                <div id="title"></div>
+                <div id="priceDiv">
+                    <p id="price"></p>
+                    <p id="mrp"></p>
+                </div>
+                <div id="ratingPro">
+                    <div id="rating"></div>
+                    <div id="reviewDiv">
+                        <p id="review"></p>
+                        <p>Reviewed</p>
+                    </div>
+                    <div id="soldDiv">
+                        <p id="sold"></p>
+                        <p>Sold</p>
+                    </div>
+                </div>
+                <div id="btnPro">
+                    <button id="addCart">Add to Cart</button>
+                    <button id= "buyNow">Buy now</button>
+                </div>
+                <div id="pincode">
+                    <h3>Check Delivery Date</h3>
+                    <p style="margin-top:10px;">Enter pincode to check delivery date of your wellness regime.</p>
+                    
+                    <div style="display: flex; margin-top: 15px; width: 100%;">
+                        <input type="number" placeholder="Enter Pincode">
+                        <button>SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div id="popularMainDiv">
+          <h1 id="headT"></h1>
+
+          <div id="popular">
+
+          </div>
+      </div>
+     
+
+    <!-- Signup and signin section -->
+    <div id="accountPage">
+      <div id="accountBackground"></div>
+
+      <div id="signupLoginBox">
+        <div id="signupBox">
+          <div class="closeDiv">
+            <div>Login or Signup</div>
+            <div class="material-icons closeBtn">close</div>
+          </div>
+          <p>Enter your phone number to verify yourself</p>
+          <input
+            id="enterNumber"
+            type="number"
+            placeholder="Enter Phone Number"
+          />
+          <p id="showMsg"></p>
+          <p>We will send OTP to this number</p>
+
+          <button id="submitBtn1">SUBMIT</button>
+        </div>
+
+        <div id="inputBox">
+          <div class="closeDiv">
+            <div>Signup</div>
+            <div class="material-icons closeBtn2">close</div>
+          </div>
+          <input id="firstName" type="text" placeholder="First Name" />
+          <p id="showFirst"></p>
+          <input id="lastName" type="text" placeholder="Last Name" />
+          <input id="emailId" type="email" placeholder="Email Id" />
+          <p id="showEmail"></p>
+
+          <button id="submitBtn2">SUBMIT</button>
+        </div>
+
+        <div id="otpBox">
+          <div class="closeDiv">
+            <div>Signup</div>
+            <div class="material-icons closeBtn3">close</div>
+          </div>
+          <p>We've sent an OTP on your number,</p>
+          <input
+            oninput="otpFun()"
+            id="enterOtp"
+            type="number"
+            placeholder="Enter OTP"
+          />
+
+          <p id="otpCheck"></p>
+
+          <button id="submitBtn3">Not received OTP? Resend</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- search div section  -->
+
+    <div id="searchSection">
+      <div id="darkBackground"></div>
+      <div id="searchBar">
+        <div id="searchInput">
+          <input type="text" placeholder="Search here..." />
+          <span>
+            <img
+              src="https://res.cloudinary.com/mosaic-wellness/image/upload/v1622088832/staging/Home/Images/Vector.png"
+              alt=""
+            />
+          </span>
+          <span onclick="searchCloseBtn()" class="material-icons">close</span>
+        </div>
+
+        <div id="trendingPart">
+          <div style="display: flex">
+            <span class="material-icons"> trending_up </span>
+            <h4>Trending</h4>
+          </div>
+          <div class="trending">
+            <span class="">Open Pores</span>
+            <span class="">Acne / Pimple</span><span class="">PCOS</span
+            ><span class="">Pigmentation / Uneven skin tone</span
+            ><span class="">Hair fall &amp; hair thinning</span
+            ><span class="">Weight management</span
+            ><span class="">Vaginal infections</span>
+          </div>
+        </div>
+
+        <div id="Recommended">
+          <h3>Recommended Products</h3>
+          <div id="recProd"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cart slider --------------------------------------- -->
+
+    <div id="cartSlider">
+      <div id="cartBackground"></div>
+      <div id="cartSliderDiv">
+        <div id="cartTop">
+          <div>
+            <i
+              id="backBtn"
+              class="fa fa-arrow-right"
+              style="font-size: 20px"
+            ></i>
+          </div>
+          <div style="font-size: 20px">Cart</div>
+        </div>
+        <div id="cartMid">
+          <div id="cartItem">
+            <div>
+              <img
+                src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_100,c_limit/v1620122159/staging/Home/Images/image_13.png"
+                alt=""
+              />
+            </div>
+            <div>
+              <h3>Your Personal Health Briefcase is empty!</h3>
+              <p>Add products to cart and begin your wellness journey now</p>
+            </div>
+            <div style="width: 100%">
+              <button id="backBtn2">Add Products</button>
+            </div>
+          </div>
+
+          <div id="cartItemMid">
+            <div id="countItem">
+              <div>
+                <p>Items</p>
+                <h4 id="noOfItem"></h4>
+              </div>
+              <div>
+                <p>Total</p>
+                <h4 id="tAmount"></h4>
+              </div>
+              <div style="color: rgb(55, 159, 142)">
+                <p>Savings</p>
+                <h4 id="sAmount"></h4>
+              </div>
+              <div></div>
+            </div>
+            <div id="cartItemList"></div>
+            <div id="billDetails">
+              <h4>Bill Details</h4>
+              <div>
+                <p>Subtotal</p>
+                <p id="currAmount"></p>
+              </div>
+              <div id="discount">
+                <p>Discount</p>
+                <p id="disAmount"></p>
+              </div>
+              <div id="ship">
+                <p>Shipping</p>
+                <p>Free!</p>
+              </div>
+              <div id="toPay">
+                <p>To Pay</p>
+                <p id="totalPay"></p>
+              </div>
+              <div id="save">
+                <p>Total Savings</p>
+                <p id="saveAmount"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cartBottom"></div>
+      </div>
+    </div>
+
+
+    <!-- last black display nav kinda thing -->
+
+    <div id="last-blc">
+      <div id="last-blc-content">
+        <img
+          id="last-logo"
+          src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_800,c_limit/v1606295435/staging/Home/Images/bodywise-logo.png"
+          alt=""
+        />
+
+        <div id="first-br">
+          <li id="nav-list-one" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#">Hair </a>
+              <span class="navy">.</span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"> Skin</a>
+              <span class="navy">.</span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#">Nutrition</a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+        <div id="first-br">
+          <li id="nav-list-two" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#">PCOS </a>
+              <span class="navy">.</span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"> Intimate Care</a>
+              <span class="navy">.</span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#">Blog</a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+        <hr width="48%" color="white" />
+
+        <div id="first-br3">
+          <li id="nav-list-two" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#">Contact Us </a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a style="margin-left: 18%" class="a-tag-navy" href="#">FAQs</a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+
+        <div id="first-br3">
+          <li id="nav-list-two" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#">About US </a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"> Returns & Refunds</a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+        <hr width="48%" color="white" />
+
+        <div id="first-br">
+          <li id="nav-list-four" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#"
+                ><img
+                  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/insta.png"
+                  alt=""
+                />
+              </a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"
+                ><img
+                  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/fb.png"
+                  alt=""
+              /></a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"
+                ><img
+                  src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto,w_50,c_limit/v1603435299/staging/Home/Images/youtube.png"
+                  alt=""
+              /></a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+
+        <div id="first-br">
+          <li id="nav-list-five" style="display: flex">
+            <ul id="navy-ul-marg">
+              <a class="a-tag-navy" href="#">Privacy Policy </a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#">Join Community</a>
+              <span class="navy"></span>
+            </ul>
+            <ul>
+              <a class="a-tag-navy" href="#"></a>
+              <span class="navy"></span>
+            </ul>
+          </li>
+        </div>
+
+        <h3 id="lst-p">Copyright © 2021 BeBodywise. All rights reserved</h3>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script type="module">
+ import {
+    hairProducts,
+    pcosProducts,
+    feminineCareProducts,
+    recentData,
+    skinProducts,
+    nutritionProducts,
+    weightProducts,
+  } from "./script/productData.js";
+
+  
+let cartData = JSON.parse(localStorage.getItem("singleItem"));
+
+let bigImg = document.getElementById("bigImg");
+let smallImg = document.getElementById("smallImg");
+
+displayPro(cartData);
+
+function displayPro(cartData){
+
+    let forText = document.getElementById("for")
+    let title = document.getElementById("title")
+    let price = document.getElementById("price")
+    let mrp = document.getElementById("mrp")
+    let rating = document.getElementById("rating")
+    let review = document.getElementById("review")
+    let sold = document.getElementById("sold")
+
+    forText.innerHTML= `<span>FOR: </span> ${cartData.productUses}`
+    title.innerText=cartData.productName;
+    price.innerHTML=`<span class="material-icons">currency_rupee</span>${cartData.price}`;
+    mrp.innerText= cartData.mrp;
+    rating.innerHTML = `${cartData.rating} <i class="fa fa-star"></i>`;
+    review.innerText=cartData.reviews;
+
+    sold.innerText = cartData.soldItems + " Units";
+
+   let img = document.createElement("img");
+   img.src = cartData.imageUrl;
+
+   bigImg.append(img)
+
+//    for(var i = 0; i < cartData.imagesAll.length; i++){
+       
+//    }
+
+}
+
+
+let headT = document.getElementById("headT")
+let popular = document.getElementById("popular")
+
+
+if(cartData.category === "hair"){
+    displayPopular(hairProducts)
+    headT.innerText = "Popular Hair Regimes";
+}else if(cartData.category === "feminineCare"){
+    displayPopular(feminineCareProducts)
+    headT.innerText = "Popular Feminine Care Regimes";
+}else if(cartData.category === "pcos"){
+    displayPopular(pcosProducts)
+    headT.innerText = "Popular PCOS Regimes";
+}else if(cartData.category === "weight"){
+    displayPopular(weightProducts)
+    headT.innerText = "Popular Weight Regimes";
+}else if(cartData.category === "skin"){
+    displayPopular(skinProducts)
+    headT.innerText = "Popular Skin Regimes";
+}else{
+    displayPopular(nutritionProducts)
+    headT.innerText = "Popular Nutrition Regimes";
+}
+
+
+function displayPopular(pro){
+
+    pro.forEach(item => {
+    console.log("~ item", item)
+        
+        let save = item.mrp-item.price;
+
+        let cardDiv = document.createElement("div");
+      cardDiv.setAttribute("id", "cardDiv");
+      let cardImg = document.createElement("div");
+      let textDiv = document.createElement("div");
+      textDiv.setAttribute("class", "textDiv");
+      let priceDiv = document.createElement("div");
+      priceDiv.setAttribute("class", "priceDiv");
+
+      let img = document.createElement("img");
+      let productName = document.createElement("p");
+      productName.setAttribute("class", "productName");
+      let price = document.createElement("p");
+      price.setAttribute("class", "price");
+      let forDiv = document.createElement("p");
+      let saveP = document.createElement("p");
+      saveP.setAttribute("id", "saveP")
+        saveP.innerText = save;
+
+      forDiv.innerHTML = `<span>For</span> ${item.productUses}`;
+
+
+
+      img.src = item.imageUrl;
+      productName.innerText = item.productName;
+      price.innerHTML = `<span class="material-icons" style="font-size:16px;">currency_rupee</span>${item.price}`;
+      
+
+      cardImg.append(saveP, img);
+      priceDiv.append(price);
+      textDiv.append(productName, priceDiv);
+      cardDiv.append(cardImg, textDiv);
+      popular.append(cardDiv);
+
+    });
+
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+<script src="script/main-script.js"></script>
+<script src="script/homeProduct.js"></script>
