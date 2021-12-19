@@ -1,0 +1,368 @@
+#productDetailsDiv {
+  width: 90%;
+  margin: auto;
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+}
+#productImageDiv {
+  border: 1px solid blue;
+}
+#completeProductDetails {
+  border: 1px solid green;
+}
+
+/* the below css part belongs product images */
+
+#next_product_imageDiv {
+  width: 100%;
+  height: 70%;
+  margin: auto;
+}
+#next_product_image {
+  width: 100%;
+  height: 100%;
+}
+#next_product_sub_image{
+    display: grid;
+    grid-template-columns: repeat(5,19%);
+    justify-content: space-between;
+}
+.next_sub_image{
+    border:1px solid green;
+    height:100px;
+   
+}
+.next_image_sub{
+  width:100%;
+  height: 100%;
+  
+}
+
+#next_left_arrow {
+  position: relative;
+  padding: 10px;
+  border: 1px solid grey;
+  display: inline-block;
+  font-size: 30px;
+  bottom: 32%;
+  margin-left:3%;
+  border-radius:30%;
+  cursor: pointer;
+}
+#next_right_arr {
+  position: relative;
+  padding: 10px;
+  border: 1px solid grey;
+  display: inline-block;
+  font-size: 30px;
+  bottom: 32%;
+  margin-left:77%;
+  border-radius:30%;
+  cursor: pointer;
+
+
+}
+
+/* the below css part belongs product details like name, price, rating, pincode */
+
+#next_product_heading {
+  font-size: 120%;
+  margin-left: 4%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#next_product_name {
+  font-size: 160%;
+  margin-left: 4%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#next_rupee_symbol {
+  font-size: 140%;
+  margin-left: 4%;
+  /* border:1px solid red; */
+  position: relative;
+}
+#next_product_price {
+  font-size: 45px;
+  font-weight: bolder;
+  /* border:1px solid red; */
+}
+#next_rating {
+  border: 1px solid blue;
+  font-size: 130%;
+  margin-left: 4%;
+  display: inline-block;
+  padding:1%;
+}
+#next_star_rating {
+  border: 1px solid red;
+  font-size: 130%;
+  margin-right: 6%;
+  display: inline-block;
+  padding:1%;
+  color:gold;
+}
+#next_reviews {
+  border: 1px solid green;
+  display: inline-block;
+  font-size: 130%;
+}
+#next_reviews_head {
+  border: 1px solid black;
+  margin-right: 5%;
+  display: inline-block;
+  font-size: 130%;
+}
+#next_sold {
+  border: 1px solid blueviolet;
+  display: inline-block;
+  font-size: 130%;
+}
+#next_product_sold {
+  border: 1px solid blueviolet;
+  display: inline-block;
+  font-size: 130%;
+
+}
+#addToCart_button {
+  margin-left: 4%;
+  font-size: 150%;
+  width: 31%;
+  /* margin-top: 1%; */
+  margin-top:1%;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#buynow_button {
+  margin-left: 4%;
+  font-size: 150%;
+  width: 31%;
+  margin-top: 5%;
+  padding: 15px;
+  background-color: #66509a;
+  color: white;
+  border-radius: 15px;
+  border: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#check_delivery_line {
+  margin-top: 5%;
+  margin-left: 4%;
+  font-size: 130%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#enter_pincode_text {
+  margin-left: 4%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+}
+#next_pincode {
+  padding: 10px;
+  margin-left: 4%;
+  font-size: 110%;
+  border-radius: 3px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#next_pincode_submit {
+  margin-left: 4%;
+  font-size: 120%;
+  width: 31%;
+  margin-top: 5%;
+  padding: 10px;
+  background-color: #66509a;
+  color: white;
+  border-radius: 4px;
+  border: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#next_pincode_available {
+  margin-left: 4%;
+  margin-top: 3%;
+  font-size: 120%;
+  color: green;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display:none;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:500px) and (max-width:750px){
+    #productDetailsDiv {
+        grid-template-columns: 100% ;
+      }
+      #next_left_arrow {
+        padding: 5px;
+        font-size: 25px;
+        bottom: 40%;
+      }
+      #next_right_arr {
+        padding: 5px;
+        font-size: 25px;
+        bottom: 40%;
+        margin-left:80%;
+      }
+
+
+      #next_product_heading {
+        font-size: 100%;
+      }
+      #next_product_name {
+        font-size: 150%;
+      }
+      #next_rupee_symbol {
+        font-size: 140%;
+      }
+      #next_product_price {
+        font-size: 30px;
+      }
+      #next_rating {
+        font-size: 110%;
+      }
+      /* #next_star_rating {
+       
+    
+      } */
+      /* #next_reviews_head {
+        
+      }
+      #next_sold { */
+        
+      /* } */ 
+
+      /* #next_product_sold {
+        
+      } */
+
+      #addToCart_button {
+        font-size: 110%;
+        padding: 10px;
+        margin-top:3%;
+      }
+      #buynow_button {
+        font-size: 110%;
+        margin-top: 3%;
+        padding: 10px;
+      }
+      #check_delivery_line {
+        font-size: 120%;
+      }
+      /* #enter_pincode_text {
+        
+      } */
+      #next_pincode {
+        font-size: 100%
+      }
+      #next_pincode_submit {
+        font-size: 100%;
+      }
+      #next_pincode_available {
+        font-size: 110%;
+      }
+      
+}
+
+
+
+
+
+@media screen and (min-width:750px) and (max-width:1200px){
+      #next_left_arrow {
+        font-size: 25px;
+        bottom: 42%;
+      }
+      #next_right_arr {
+        font-size: 25px;
+        bottom: 59%;
+        margin-left:85%;
+      }
+
+
+      /* #next_product_heading {
+    
+        
+      } */
+
+      #next_product_name {
+        font-size: 150%;
+      }
+      
+      /* #next_rupee_symbol {
+        
+      } */
+
+      #next_product_price {
+        font-size: 35px;
+       
+        
+      }
+      #next_rating {
+        font-size: 120%;
+       
+      }
+
+      /* #next_star_rating {
+        
+        
+      } */
+
+      /* #next_reviews {
+      
+      } */
+
+      /* #next_reviews_head {
+      
+      } */
+
+      /* #next_sold {
+       
+      } */
+
+      /* #next_product_sold {
+       
+      } */
+
+      #addToCart_button {
+        font-size: 120%;
+        width: 35%;
+        padding: 12px;
+      }
+
+      #buynow_button {
+        font-size: 120%;
+        width: 35%;
+        padding: 12px;
+      }
+      #check_delivery_line {
+        font-size: 120%;
+    
+      }
+
+      /* #enter_pincode_text {
+        
+      } */
+
+      /* #next_pincode {
+    
+      } */
+
+      #next_pincode_submit {
+        font-size: 110%;
+        padding:3%;
+      }
+      #next_pincode_available {
+        font-size: 110%;
+      }
+}
