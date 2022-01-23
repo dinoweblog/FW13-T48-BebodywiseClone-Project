@@ -1,0 +1,119 @@
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+#Sun_productMainDiv {
+  width: 82%;
+  margin: auto;
+  margin-top: 60px;
+  position: relative;
+  margin-bottom: 50px;
+}
+#Sun_productBtn1 {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+#Sun_productBtn1 button {
+  height: 45px;
+  padding: 00px 75px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.rupeeFnt {
+  font-size: 20px;
+  font-weight: 100;
+}
+#Sun_productBtn2 {
+  display: flex;
+  /* color: #66509a; */
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+#Sun_productBtn2 div {
+  border: 1px solid #66509a;
+  /* padding: 5px; */
+  margin-top: -5px;
+  border-radius: 10px;
+}
+#Sun_productBtn2 > div button {
+  background-color: white;
+  /* color: #66509a; */
+  border: none;
+  padding: 0px 50px;
+  height: 37.5px;
+  border-radius: 10px;
+}
+#productDisplyMain img {
+  width: 300px;
+}
+#productDisplyMain button {
+  width: 300px;
+  /* background-color: #5e93bd; */
+  border: none;
+  height: 50px;
+  position: absolute;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 10px;
+}
+#productDisplyMain > div {
+  width: 300px;
+  height: 500px;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#productDisplyMain {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  row-gap: 30px;
+}
+.mrpValue {
+  text-decoration-line: line-through;
+}
+#filterProduct {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#filterProduct p {
+  font-size: 23px;
+}
+#filterProduct select {
+  padding: 8px;
+  margin-left: 40px;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 20px;
+  color: rgb(158, 155, 155);
+}
+#contentDivId {
+  line-height: 32px;
+}
+
+/* ============== */
+
+#allProShow {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+
+#allProShow #cardDiv {
+  width: 24.3vw;
+  margin-bottom: 2vw;
+  margin-right: 0px;
+  box-shadow: 0 17.2866px 17.2866px rgb(0 0 0 / 10%);
+}

@@ -1,0 +1,639 @@
+<%- include("_header",{title:"ProductPage", stylesheet:"css/product.css" }) -%>
+
+
+  <!-- <body onload=""> -->
+    
+    <body onload="allProducts(`<%= JSON.stringify(products) %>`)">
+
+
+      <div id="body-container">
+        <div id="main-container"><%- include("common/header") %></div>
+      </div>
+
+
+    <div id="Sun_productMainDiv">
+      <div id="Sun_productBtn1">
+        <button
+          id="hairBtn"
+         
+          style="background-color: #efedf5; color: #66509a"
+        >
+          Hair
+        </button>
+        <button
+          id="skinBtn"
+        
+          style="background-color: #fbf3e9; color: #d8892b"
+        >
+          Skin
+        </button>
+        <button
+        id="weightBtn"
+         
+          style="background-color: #e8f0ef; color: #1a6c5e"
+        >
+          Weight
+        </button>
+
+        <button
+          id="pcosBtn"
+         
+          style="background-color: #fdeff0; color: #e86669"
+        >
+          PCOS
+        </button>
+
+        <button
+          id="feminineBtn"
+          
+          style="background-color: #eff4f8; color: #5e93bd"
+        >
+          Feminine Care
+        </button>
+       
+      </div>
+
+      <div id="filterProduct">
+          <p>Shop Hair Solutions</p>
+          <div>
+            <select name="" id="">
+                <option value="">Hair Type</option>
+              </select>
+              <select name="" id="">
+                <option value="">Hair Issue</option>
+              </select>
+          </div>
+         
+          
+        
+
+      </div>
+
+
+      <div id="Sun_productBtn2">
+        <p id="itemCount">6 &nbsp products</p>
+        <div id="all_clr">
+          <button id="allBtn">All</button>
+          <button id="kitesBtn" >Kits</button>
+          <button id="singleBtn" >Single</button>
+        </div>
+      </div>
+      <div id="productDisplyMain">
+
+      </div>
+    </div>
+    <div id="onetwo">
+      
+    </div>
+
+        <!-- Feeling confused -->
+    <div id="feeling" style="margin-bottom: 100px;">
+      <div id="underFeel">
+        <div>
+          <img
+            src="https://res.cloudinary.com/mosaic-wellness/image/upload/f_auto/v1611455725/Bodywise/Random/Rectangle_94.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h1>Feeling confused?</h1>
+          <p>Take a quick assessment co-created with our expert doctors</p>
+          <button>Consult Doctor Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div id=""><%- include("common/signinLogin") %></div>
+    <div id=""><%- include("common/searchSection") %></div>
+    <div id=""><%- include("common/cartSlider") %></div>
+    <div id="footerDiv"><%- include("common/footer") %></div>
+
+    <script >
+   
+   let productList;
+
+ 
+function allProducts(items) {
+  productList = JSON.parse(items);
+  hairFn()
+}
+
+
+
+
+let productDisplyMain = document.getElementById("productDisplyMain");
+let productDisplyMainSubtype=[];
+
+let type;
+document.getElementById("hairBtn").addEventListener("click",hairFn)
+
+
+function hairFn() {
+  document.getElementById("filterProduct").style.display="flex"
+ buttonColor()
+ 
+   let hairData=document.getElementById("hairBtn");
+   hairData.style.backgroundColor="#66509a"
+
+   hairData.style.color="white"
+    type="hair"
+   appendData(type)
+
+   button2_ColorClear(type)
+   let btnTyp="allBtn"
+   button2_Color(type,btnTyp)
+ 
+}
+
+document.getElementById("skinBtn").addEventListener("click",skinFn)
+function skinFn(){
+
+  document.getElementById("filterProduct").style.display="none"
+
+ buttonColor()
+ let skinData=document.getElementById("skinBtn");
+ skinData.style.backgroundColor="rgb(25, 100, 171)"
+
+ skinData.style.color="white"
+ type="skin"
+   appendData(type)
+
+   button2_ColorClear(type)
+   let btnTyp="allBtn"
+   button2_Color(type,btnTyp)
+}
+
+
+document.getElementById("weightBtn").addEventListener("click",weightFn)
+
+function weightFn(){
+  document.getElementById("filterProduct").style.display="none"
+ // let weightFilter=document.getElementById("Sun_productBtn2");
+ // weightFilter.style.color="black"
+
+ buttonColor()
+
+ // weightFilter.style.backgroundColor=""
+  let weightData=document.getElementById("weightBtn");
+  weightData.style.backgroundColor="#1a6c5e"
+
+  weightData.style.color="white"
+
+  
+
+ type="weight"
+   appendData(type)
+
+   button2_ColorClear(type)
+   let btnTyp="allBtn"
+   button2_Color(type,btnTyp)
+}
+
+
+document.getElementById("pcosBtn").addEventListener("click",pcosFn)
+function pcosFn(){
+  document.getElementById("filterProduct").style.display="none"
+ buttonColor()
+ let pcosData=document.getElementById("pcosBtn");
+ pcosData.style.backgroundColor="#e86669"
+
+ pcosData.style.color="white"
+ type="pcos"
+   appendData(type)
+
+   button2_ColorClear(type)
+   let btnTyp="allBtn"
+   button2_Color(type,btnTyp)
+}
+
+document.getElementById("feminineBtn").addEventListener("click",feminineFn)
+
+function feminineFn(){
+  document.getElementById("filterProduct").style.display="none"
+ buttonColor()
+ let feminineData=document.getElementById("feminineBtn");
+ feminineData.style.backgroundColor="#5e93bd"
+
+ feminineData.style.color="white"
+
+ 
+ type="feminineCare"
+
+   appendData(type)
+   button2_ColorClear(type)
+   let btnTyp="allBtn"
+   button2_Color(type,btnTyp)
+}
+
+
+// hairFn()
+function button2_Color(type,btnTyp){
+let allBtnClr=document.getElementById(btnTyp);
+allBtnClr.style.borderRadius="10px"
+
+let all_clr=document.getElementById("all_clr");
+function btn2FntClr(clr){
+document.getElementById("allBtn").style.color=clr
+document.getElementById("kitesBtn").style.color=clr
+document.getElementById("singleBtn").style.color=clr
+}
+
+if(type=="feminineCare"){
+    let clr="#5e93bd"
+    btn2FntClr(clr)
+    document.getElementById("Sun_productBtn2").style.color=clr
+    allBtnClr.style.backgroundColor=clr
+    allBtnClr.style.color="white";
+    all_clr.style.borderColor=clr
+
+    
+    
+    
+}else if(type=="pcos"){
+    let clr="#e86669"
+    btn2FntClr(clr)
+    document.getElementById("Sun_productBtn2").style.color=clr
+  
+    allBtnClr.style.backgroundColor=clr
+    allBtnClr.style.color="white";
+    all_clr.style.borderColor=clr
+   
+}else if(type=="weight"){
+    let clr="#1a6c5e"
+    btn2FntClr(clr)
+    document.getElementById("Sun_productBtn2").style.color=clr
+    
+    allBtnClr.style.backgroundColor=clr
+    allBtnClr.style.color="white";
+    all_clr.style.borderColor=clr
+    
+}else if(type=="skin"){
+    let clr="rgb(25, 100, 171)"
+    btn2FntClr(clr)
+    document.getElementById("Sun_productBtn2").style.color=clr 
+    
+    allBtnClr.style.backgroundColor=clr
+    allBtnClr.style.color="white"; 
+    all_clr.style.borderColor=clr
+    
+}else if(type=="hair"){
+    let clr="#66509a"
+    btn2FntClr(clr)
+    document.getElementById("Sun_productBtn2").style.color=clr
+   
+    allBtnClr.style.backgroundColor=clr
+    allBtnClr.style.color="white";
+    all_clr.style.borderColor=clr
+    
+}
+}
+
+function buttonColor(){
+         let hairData=document.getElementById("hairBtn");
+         hairData.style.backgroundColor="#efedf5"
+        
+         hairData.style.color="#66509a"
+     
+        //  color: rgb(25, 100, 171); background-color: rgb(232, 244, 255);
+         let skinData=document.getElementById("skinBtn");
+        //  skinData.style.backgroundColor="#fbf3e9"
+     
+        //  skinData.style.color="#d8892b"
+
+
+         skinData.style.backgroundColor="rgb(232, 244, 255)"
+     
+         skinData.style.color="rgb(25, 100, 171)"
+     
+         let weightData=document.getElementById("weightBtn");
+         weightData.style.backgroundColor="#e8f0ef"
+        
+          weightData.style.color="#1a6c5e"
+     
+          let pcosData=document.getElementById("pcosBtn");
+         pcosData.style.backgroundColor="#fdeff0"
+        
+         pcosData.style.color="#e86669"
+     
+         let feminineData=document.getElementById("feminineBtn");
+         feminineData.style.backgroundColor="#eff4f8"
+        
+         feminineData.style.color="#5e93bd"
+     
+    }
+
+
+function appendData(type){
+
+    if(type=="feminineCare"){
+    var clrn="#5e93bd"  
+    
+}else if(type=="pcos"){
+    var clrn="#e86669"   
+}else if(type=="weight"){
+    var clrn="#1a6c5e"    
+}else if(type=="skin"){
+    var clrn="rgb(25, 100, 171)"  
+    
+}else if(type=="hair"){
+    var clrn="#66509a"    
+}
+//  console.log(clrn)
+ productDisplyMainSubtype=[];
+
+ productDisplyMain.innerHTML=null;
+     let count = 0;
+
+     productList.forEach(function (el) {
+         
+       if (el.category == type) {
+         productDisplyMainSubtype.push(el);
+           count++
+         let productDiv = document.createElement("div");
+      
+         
+ 
+         let img = document.createElement("img");
+         img.src = el.imageUrl;
+         img.style.borderRadius="20px"
+ 
+         let contentDiv=document.createElement("div");
+         contentDiv.style.height="230px"
+ if(el.mrp==el.price){
+     var price = document.createElement("p");
+         price.textContent ="₹"+el.price;
+         price.innerHTML=`<span class="rupeeFnt">₹</span>${el.price}` 
+         price.style.fontSize="33px"
+         price.style.fontWeight="bold"
+ }
+
+ else{
+     var price = document.createElement("p");
+        
+        //  price.innerHTML=`₹${el.price} <span class="mrpValue"> &nbsp₹${el.mrp}&nbsp</span>`
+         price.innerHTML=`<span class="rupeeFnt">₹</span>${el.price} &nbsp<span class="rupeeFnt">₹</span><span class="mrpValue">${el.mrp}</span>`
+         price.style.fontSize="33px"
+         price.style.fontWeight="bold"
+ }
+      
+         let title = document.createElement("p");
+         title.textContent = el.productName;
+        
+         let useFor = document.createElement("p");
+         useFor.innerHTML = `<span style="font-weight: bold; color: ${clrn};">FOR</span> ${el.productUses}`;
+         useFor.setAttribute("id","useWith")
+         let useWith = document.createElement("p");
+         useWith.innerHTML = `<span style="font-weight: bold; color: ${clrn};">WITH</span> ${el.productMade}`;
+         useWith.setAttribute("id","useWith")
+
+         let addCartBtn=document.createElement("button");
+         addCartBtn.style.backgroundColor=clrn         
+         addCartBtn.textContent="Add to Cart"
+         addCartBtn.addEventListener("click",function(){
+            //  addToCartFn(el)
+             addToCart(JSON.stringify(el))
+         });
+         
+         contentDiv.setAttribute("id","contentDivId");
+
+           // line height for content div
+        price.style.lineHeight="55px"
+        // useFor.style.lineHeight="20px"
+        useWith.style.marginTop="15px"
+
+         contentDiv.append(title, price, useFor,useWith)
+         productDiv.append(img, contentDiv,addCartBtn);
+         img.addEventListener("click",function(){
+             individualShowFn(el)
+         })
+ 
+         productDisplyMain.append(productDiv);
+       }
+     });
+     let itemCount = document.getElementById("itemCount");
+     itemCount.innerHTML=`${count}&nbsp products`
+     
+     status=false;
+}
+
+
+function individualShowFn(el){
+  localStorage.setItem("individualShowData",JSON.stringify(el))
+ window.location.href=`productDetails/${el._id}`
+} 
+
+// second button all, kite, single
+
+document.getElementById("kitesBtn").addEventListener("click",kitsFn);
+
+function kitsFn(){
+ let subtype="kits"
+status=true;
+ appendData1(type,subtype)
+
+ button2_ColorClear(type)
+let btnTyp="kitesBtn"
+button2_Color(type,btnTyp)
+ 
+
+}
+
+document.getElementById("allBtn").addEventListener("click",allFn);
+
+function allFn(){
+ let subtype="all"
+
+ appendData(type,subtype)
+ button2_ColorClear(type)
+ let btnTyp="allBtn"
+button2_Color(type,btnTyp)
+
+
+}
+
+document.getElementById("singleBtn").addEventListener("click",singleFn);
+
+function singleFn(){
+ let subtype="single"
+ status=true;
+ appendData1(type,subtype)
+ button2_ColorClear(type)
+ let btnTyp="singleBtn"
+button2_Color(type,btnTyp)
+ 
+}
+
+function button2_ColorClear(type){
+if(type=="feminineCare"){
+var clrn="#5e93bd"  
+}else if(type=="pcos"){
+    var clrn="#e86669"   
+}else if(type=="weight"){
+    var clrn="#1a6c5e"    
+}else if(type=="skin"){
+    var clrn="rgb(25, 100, 171)"  
+    
+}else if(type=="hair"){
+    var clrn="#66509a"    
+}
+   document.getElementById("all_clr").style.color=clrn
+    let allBtnClr=document.getElementById("allBtn");
+    allBtnClr.style.backgroundColor="white"
+    let kitesBtnClr=document.getElementById("kitesBtn");
+    kitesBtnClr.style.backgroundColor="white"
+    let singleBtnClr=document.getElementById("singleBtn");
+    singleBtnClr.style.backgroundColor="white"  
+}
+
+
+// var addToCartData=JSON.parse(localStorage.getItem("cart"))||[];
+
+// function addToCartFn(el){
+
+//  console.log(addToCartData.length);
+//  console.log(el)
+// //  var status=false;
+
+// //  for(let i=0; i<addToCartData.length; i++){
+// //      if(el.productName==addToCartData[i].productName){
+// //          status=true; 
+// //      }
+// //  }
+
+
+
+// // if(status==false){
+ 
+// //  addToCartData.push(el)
+
+// //  localStorage.setItem("cart",JSON.stringify(addToCartData));
+
+ 
+// // }else{
+// //  alert("already added")
+// // }
+
+
+// addToCartData.push(el)
+
+// localStorage.setItem("cart",JSON.stringify(addToCartData));
+
+// // addToCartData=JSON.parse(localStorage.getItem("cart"))
+
+// displayCartItem(addToCartData)
+
+// document.getElementById("cartCount").textContent=addToCartData.length
+
+
+// }
+
+
+
+       
+function appendData1(type,subtype){   
+
+if(type=="feminineCare"){
+var clrn="#5e93bd"  
+
+}else if(type=="pcos"){
+    var clrn="#e86669"   
+}else if(type=="weight"){
+    var clrn="#1a6c5e"    
+}else if(type=="skin"){
+    var clrn="rgb(25, 100, 171)"  
+    
+}else if(type=="hair"){
+    var clrn="#66509a"    
+}
+
+productDisplyMain.innerHTML=null;
+  let count = 0; 
+
+  productDisplyMainSubtype.forEach(function (el) {
+      
+    if (el.category == type&&el.subCategory==subtype) {
+     //  productDisplyMainSubtype.push(el);
+        count++
+      let productDiv = document.createElement("div");
+      // productDiv.style.width="200px"
+      
+
+      let img = document.createElement("img");
+      img.src = el.imageUrl;
+      img.style.borderRadius="20px"
+
+      let contentDiv=document.createElement("div");
+      contentDiv.style.height="230px"
+
+if(el.mrp==el.price){
+  var price = document.createElement("p");
+    //   price.textContent ="₹"+el.price;
+    
+      price.innerHTML=`<span class="rupeeFnt">₹</span>${el.price}`
+      price.style.fontSize="33px"
+      price.style.fontWeight="bold"
+}
+
+
+else{
+  var price = document.createElement("p");
+      // price.textContent ="₹" +el.price +"  "+el.mrp; 
+      price.innerHTML=`<span class="rupeeFnt">₹</span>${el.price} &nbsp<span class="rupeeFnt">₹</span><span class="mrpValue">${el.mrp}</span>`
+      price.style.fontSize="33px"
+      price.style.fontWeight="bold"
+}
+     
+
+
+      let title = document.createElement("p");
+      title.textContent = el.productName;
+
+      let useFor = document.createElement("p");
+      useFor.innerHTML = `<span style="font-weight: bold; color: ${clrn};">FOR</span> ${el.productUses}`;
+
+      let useWith = document.createElement("p");
+      useWith.innerHTML = `<span style="font-weight: bold; color: ${clrn};">WITH</span> ${el.productMade}`;
+
+
+      let addCartBtn=document.createElement("button");
+      addCartBtn.textContent="Add to Cart"
+      addCartBtn.style.backgroundColor=clrn 
+      addCartBtn.addEventListener("click",function(){
+          addToCartFn(el)
+          addToCart(JSON.stringify(el))
+      });
+
+
+      contentDiv.setAttribute("id","contentDivId");
+
+      price.style.lineHeight="55px"
+        // useFor.style.lineHeight="20px"
+        useWith.style.marginTop="15px"
+
+      contentDiv.append(title, price, useFor,useWith)
+      productDiv.append(img, contentDiv,addCartBtn);
+
+      img.addEventListener("click",function(){
+             individualShowFn(el)
+         })
+
+      productDisplyMain.append(productDiv);
+    }
+  });
+  document.getElementById("itemCount").innerHTML=`${count}&nbsp products`
+  status=false;
+
+}
+
+ 
+    </script>
+    
+  <script src="/js/script.js"></script>
+  
+  <script src="/js/slider.js"></script>
+
+  <script src="/js/cart.js"></script>
+  </body>
+</html>
+
+
