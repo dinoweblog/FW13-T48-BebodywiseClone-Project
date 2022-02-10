@@ -61,39 +61,38 @@ Here you can find brief history of the products and website
  
     
 
----
+
 
 ### Add to Cart
 In this Page, You can add the products to the Cart
----
 
 
 
----
+
+
 ### Sign-Up Page
 if you want buy any product you need sign up first and login with details then only you can buy
----
 
 
 
----
 
-- **Products Page**
+
+### Products Page
 In this page, you can find all details of the product like price of the product, Ratings given by the customer to each product, how products sold , How to use the product and how the product made
----
 
 
-- **Payment Page**
+
+ ### Payment Page
 In this page, If you want to purchase the product, you need fill some details regarding card details and here you also find how the discount you get, how much you need to pay and address
----
 
 
 
----
 
-- **Order Summary**
+
+
+### Order Summary
 After purchase the product,  it will show the order details like how much you paid and when product will deliver.
----
+
 
 
 
