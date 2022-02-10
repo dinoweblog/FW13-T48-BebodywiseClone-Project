@@ -56,22 +56,21 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 
 ---
 
-- **Home Page**
+### Home Page
 Here you can find brief history of the products and website
  
     
 
 ---
 
-- Add to Cart
+### Add to Cart
 In this Page, You can add the products to the Cart
 ---
 
 
 
 ---
-
-- **Sign-Up Page**
+### Sign-Up Page
 if you want buy any product you need sign up first and login with details then only you can buy
 ---
 
