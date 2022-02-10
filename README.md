@@ -56,7 +56,7 @@ First you have to have to go to the `Home Page`. There you have to click on acco
 
 ---
 
-### Home Page
+# Home Page
 Here you can find brief history of the products and website
  
     
